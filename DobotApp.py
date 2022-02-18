@@ -31,7 +31,9 @@ TOPICS = [
     #filename of csv file
     "topic/filename",
     #runCSV
-    "topic/runCSV"
+    "topic/runCSV",
+    #Get joint angle of dobot and send to csv form
+    "topic/getCSVPos"
 ]
 
 def main_cb(client, userdata, msg):
@@ -85,6 +87,7 @@ client.on_message = main_cb
 size = 6
 Angle = [0] * size
 Pose = [0] *size
+filename = 0
 
 def main(client_dashboard, client_feedback, Angle, Pose):
     # Remove alarm
@@ -173,6 +176,7 @@ def main(client_dashboard, client_feedback, Angle, Pose):
         if recv_topic == "topic/getCSVPos":
             Angle = client_dashboard.GetAngle()
             client.publish("topic/RecvCSVPos", Angle)
+            client.publish("topic/Break","break")
 
         #Move robot with csv file
         if recv_topic == "topic/runCSV":
@@ -190,8 +194,9 @@ def main(client_dashboard, client_feedback, Angle, Pose):
         #save filename
         if recv_topic == "topic/filename":
             filename = recv_msg
-            filepath = "OneDrive/Desktop/Internship"
+            filepath = "CSV_SaveLoc"
             fullpath = filepath + filename
+            filename = 1
         #export data to file
         if recv_topic == "topic/recv_data":
             # access the Dictionary from the parsed JSON          
@@ -206,7 +211,7 @@ def main(client_dashboard, client_feedback, Angle, Pose):
             df = pd.DataFrame([recv_msg]).T
             df.to_csv(fullpath, index=False)
 
-        if recv_topic == "topic/CoreFunc" and recv_msg == "GetData":
+        if recv_topic == "topic/CoreFunc" and recv_msg == "GetData" and filename==1:
             df = pd.read_csv(fullpath)
             #minus 2 because it will have data + 2 more lines
             lines= len(df)-2
@@ -221,7 +226,7 @@ def main(client_dashboard, client_feedback, Angle, Pose):
                 client.publish("topic/recv_joint",send)
                 row = row + 1
             data_dict = "Random String"
-            client.publish("topic/break", payload = "Done")
+            filename = 0
 
                     
 # Enable threads on ports 29999 and 30003
