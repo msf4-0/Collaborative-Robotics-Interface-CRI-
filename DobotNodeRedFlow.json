@@ -611,7 +611,7 @@
         "type": "pythonshell in",
         "z": "aafced5826385ea7",
         "name": "",
-        "pyfile": "/Users/Dannielle/Desktop/Dobot-Control/Dobot-Control/DobotApp.py",
+        "pyfile": "",
         "virtualenv": "",
         "continuous": false,
         "stdInData": false,
