@@ -34,6 +34,8 @@ TOPICS = [
     "topic/runCSV",
     #Get joint angle of dobot and send to csv form
     "topic/getCSVPos"
+
+    # "topic/newPoint"
 ]
 
 def main_cb(client, userdata, msg):
@@ -103,6 +105,7 @@ def main(client_dashboard, client_feedback, Angle, Pose):
         Pose = client_dashboard.GetPose()
         client.publish("topic/Pose",Pose)
         time.sleep(0.25)
+        print("In main while loop.............................................")
         #To unlock robot
         if recv_topic == "topic/CoreFunc" and recv_msg == "Enable":
             client_dashboard.EnableRobot()
@@ -112,13 +115,63 @@ def main(client_dashboard, client_feedback, Angle, Pose):
         #Clear Error messages
         if recv_topic == "topic/CoreFunc" and recv_msg == "ClearErr":
             client_dashboard.ClearError()
+
+        # if recv_topic == "topic/newPoint":
+        #     point = recv_msg
+        #     pointString = point.split(",")
+
+        #     while recv_topic == "TPMove":
+        #         #Stop robot
+        #         client_feedback.MoveJog("")
+        #         time.sleep(0.10)
+        #         #Re-enable robot
+        #         client_dashboard.EnableRobot()
+        #         time.sleep(0.10)
+        #         Angle = client_dashboard.GetAngle()
+        #         client.publish("topic/Angle", Angle)
+        #         time.sleep(0.1)
+        #         #If button is held down 
+        #         while recv_topic == "topic/TPMove" and recv_msg == "GO":
+        #             client_feedback.JointMovJ((float(pointString[0])),float((pointString[1])),float((pointString[2])),float((pointString[3])),float((pointString[4])),float((pointString[5]))) 
+        #             time.sleep(0.25)
+        #             Angle = client_dashboard.GetAngle()
+        #             #if button is released
+        #             if recv_msg == "NOGO" and recv_topic == "topic/TPMove":
+        #                 break
+        #             #if reached teach point position
+        #             if Angle[1:-1] == point:
+        #                 client.publish("topic/break", payload = "Done")
+        #                 time.sleep(0.25)
+        #                 break
+        #             # else:
+        #             #     client.publish("topic/break", payload = "Running")
+                    
+        #             #if receive terminate app 
+        #             if recv_msg == "Terminate":
+        #                 break
+        #         #if receive terminate app 
+        #         if recv_msg == "Terminate":
+        #                 break
+
+
+        #     print(recv_msg)
+        #     print("Obtained mesage ******************************************************")
+            
+
         #Teach point
         if recv_topic == "topic/runTo":
             time.sleep(0.25)
             point = recv_msg
+            time.sleep(0.1)
+            print("Got the teach point angle.................................................................................")
+            print("Got the teach point angle.................................................................................")
+
+            # time.sleep(0.3)
             pointString = point.split(",")
             #topic/TPMove for hold button
             while recv_topic == "topic/runTo" or recv_topic == "topic/TPMove":
+                print("Start runto the teach point angle.................................................................................")
+
                 #Stop robot
                 client_feedback.MoveJog("")
                 time.sleep(0.10)
@@ -137,6 +190,12 @@ def main(client_dashboard, client_feedback, Angle, Pose):
                     if recv_msg == "NOGO" and recv_topic == "topic/TPMove":
                         break
                     #if reached teach point position
+                    if Angle[1:-1] == point:
+                        client.publish("topic/break", payload = "Done")
+                        time.sleep(0.25)
+                        break
+                    else:
+                        client.publish("topic/break", payload = "Running")
                     
                     #if receive terminate app 
                     if recv_msg == "Terminate":
@@ -145,10 +204,7 @@ def main(client_dashboard, client_feedback, Angle, Pose):
                 if recv_msg == "Terminate":
                         break
                     
-                if Angle[1:-1] == point:
-                        client.publish("topic/break", payload = "Done")
-                        time.sleep(0.25)
-                        break
+                
         #MoveJog function
         while recv_topic == "topic/Jog":  
             client_feedback.MoveJog(recv_msg)
