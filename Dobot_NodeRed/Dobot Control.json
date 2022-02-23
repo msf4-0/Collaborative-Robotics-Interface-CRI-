@@ -1,6 +1,6 @@
 [
     {
-        "id": "aafced5826385ea7",
+        "id": "4e7469d429d4695f",
         "type": "tab",
         "label": "DobotCR5Controls",
         "disabled": false,
@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "1938cc21cad06b02",
+        "id": "2279cb2e1d82b947",
         "type": "inject",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "CLEAR",
         "props": [
             {
@@ -27,18 +27,18 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 230,
-        "y": 140,
+        "x": 690,
+        "y": 180,
         "wires": [
             [
-                "5af0f75c38e81ff4"
+                "203ae11c6bf0ec28"
             ]
         ]
     },
     {
-        "id": "ad720bb4a7e2532a",
+        "id": "0cbce9a8ca65a42c",
         "type": "inject",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Start",
         "props": [
             {
@@ -55,18 +55,18 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 230,
-        "y": 200,
+        "x": 690,
+        "y": 240,
         "wires": [
             [
-                "90516b33bca88766"
+                "329637ca9bfb5101"
             ]
         ]
     },
     {
-        "id": "fcee772b65317b43",
+        "id": "935694e296eee10e",
         "type": "inject",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Pause",
         "props": [
             {
@@ -83,18 +83,18 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 230,
-        "y": 260,
+        "x": 690,
+        "y": 300,
         "wires": [
             [
-                "2278befe71ccad9a"
+                "9be7199ab875acef"
             ]
         ]
     },
     {
-        "id": "177e4bb7cbdfd603",
+        "id": "6875661e6ac4ceae",
         "type": "inject",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Continue",
         "props": [
             {
@@ -111,18 +111,18 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 240,
-        "y": 320,
+        "x": 700,
+        "y": 360,
         "wires": [
             [
-                "6189c0cfb477b839"
+                "3fc848ea57f04af3"
             ]
         ]
     },
     {
-        "id": "dd240dc9fb73dbce",
+        "id": "7b67864fe4920a6f",
         "type": "inject",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Stop",
         "props": [
             {
@@ -139,20 +139,20 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 230,
-        "y": 380,
+        "x": 690,
+        "y": 420,
         "wires": [
             [
-                "e16fe1bce3c25aa0"
+                "5e9310881d82564c"
             ]
         ]
     },
     {
-        "id": "0ed06c1a5e3e86d8",
+        "id": "f3c19dea30a20f55",
         "type": "ui_button",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
-        "group": "9513f97c8f62a13b",
+        "group": "f29b12ea02f013df",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -167,20 +167,20 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 570,
-        "y": 220,
+        "x": 1030,
+        "y": 260,
         "wires": [
             [
-                "90516b33bca88766"
+                "329637ca9bfb5101"
             ]
         ]
     },
     {
-        "id": "d4ac235dbd817990",
+        "id": "941f75e903ed03da",
         "type": "ui_button",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
-        "group": "9513f97c8f62a13b",
+        "group": "f29b12ea02f013df",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -195,20 +195,20 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 570,
-        "y": 280,
+        "x": 1030,
+        "y": 320,
         "wires": [
             [
-                "2278befe71ccad9a"
+                "9be7199ab875acef"
             ]
         ]
     },
     {
-        "id": "a6af288a0ab87e5f",
+        "id": "566f66294d8e1863",
         "type": "ui_button",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
-        "group": "9513f97c8f62a13b",
+        "group": "f29b12ea02f013df",
         "order": 3,
         "width": 0,
         "height": 0,
@@ -223,20 +223,20 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 580,
-        "y": 340,
+        "x": 1040,
+        "y": 380,
         "wires": [
             [
-                "6189c0cfb477b839"
+                "3fc848ea57f04af3"
             ]
         ]
     },
     {
-        "id": "bbc538d7a686b94d",
+        "id": "1e47b3657852bafc",
         "type": "ui_button",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
-        "group": "9513f97c8f62a13b",
+        "group": "f29b12ea02f013df",
         "order": 4,
         "width": 0,
         "height": 0,
@@ -251,18 +251,18 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 570,
-        "y": 400,
+        "x": 1030,
+        "y": 440,
         "wires": [
             [
-                "e16fe1bce3c25aa0"
+                "5e9310881d82564c"
             ]
         ]
     },
     {
-        "id": "5af0f75c38e81ff4",
+        "id": "203ae11c6bf0ec28",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Clear",
         "func": "msg.payload = { value:[0,0,0,0],\n'fc': 15,\n'unitid': 1,\n'address': 0,\n'quantity': 4 }\nreturn msg;",
         "outputs": 1,
@@ -270,18 +270,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 810,
-        "y": 140,
+        "x": 1270,
+        "y": 180,
         "wires": [
             [
-                "87e52d360feced70"
+                "3e947209809a2f9d"
             ]
         ]
     },
     {
-        "id": "90516b33bca88766",
+        "id": "329637ca9bfb5101",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Start",
         "func": "msg.payload = { value:[1,0,0,0],\n'fc': 15,\n'unitid': 1,\n'address': 0,\n'quantity': 4 }\nreturn msg;",
         "outputs": 1,
@@ -289,18 +289,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 810,
-        "y": 200,
+        "x": 1270,
+        "y": 240,
         "wires": [
             [
-                "87e52d360feced70"
+                "3e947209809a2f9d"
             ]
         ]
     },
     {
-        "id": "2278befe71ccad9a",
+        "id": "9be7199ab875acef",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Pause",
         "func": "msg.payload = { value:[0,1,0,0],\n'fc': 15,\n'unitid': 1,\n'address': 0,\n'quantity': 4 }\nreturn msg;",
         "outputs": 1,
@@ -308,18 +308,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 810,
-        "y": 260,
+        "x": 1270,
+        "y": 300,
         "wires": [
             [
-                "87e52d360feced70"
+                "3e947209809a2f9d"
             ]
         ]
     },
     {
-        "id": "6189c0cfb477b839",
+        "id": "3fc848ea57f04af3",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Continue",
         "func": "msg.payload = { value:[0,0,1,0],\n'fc': 15,\n'unitid': 1,\n'address': 0,\n'quantity': 4 }\nreturn msg;",
         "outputs": 1,
@@ -327,18 +327,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 320,
+        "x": 1280,
+        "y": 360,
         "wires": [
             [
-                "87e52d360feced70"
+                "3e947209809a2f9d"
             ]
         ]
     },
     {
-        "id": "e16fe1bce3c25aa0",
+        "id": "5e9310881d82564c",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Stop",
         "func": "msg.payload = { value:[0,0,0,1],\n'fc': 15,\n'unitid': 1,\n'address': 0,\n'quantity': 4 }\nreturn msg;",
         "outputs": 1,
@@ -346,49 +346,49 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 810,
-        "y": 380,
+        "x": 1270,
+        "y": 420,
         "wires": [
             [
-                "87e52d360feced70"
+                "3e947209809a2f9d"
             ]
         ]
     },
     {
-        "id": "7c4205a14d04a5f3",
+        "id": "c24d531869073515",
         "type": "modbus-response",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "registerShowMax": 20,
-        "x": 1430,
-        "y": 260,
+        "x": 1890,
+        "y": 300,
         "wires": []
     },
     {
-        "id": "87e52d360feced70",
+        "id": "3e947209809a2f9d",
         "type": "modbus-flex-write",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Dobot Controller",
         "showStatusActivities": false,
         "showErrors": false,
         "server": "63d69422.2169ac",
         "emptyMsgOnFail": false,
         "keepMsgProperties": false,
-        "x": 1120,
-        "y": 260,
+        "x": 1580,
+        "y": 300,
         "wires": [
             [
-                "7c4205a14d04a5f3"
+                "c24d531869073515"
             ],
             [
-                "7c4205a14d04a5f3"
+                "c24d531869073515"
             ]
         ]
     },
     {
-        "id": "5e8528108c6a8802",
+        "id": "2fa584362d3b709d",
         "type": "exec",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "command": "python",
         "addpay": "payload",
         "append": "",
@@ -397,8 +397,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 390,
-        "y": 940,
+        "x": 850,
+        "y": 980,
         "wires": [
             [],
             [],
@@ -406,13 +406,13 @@
         ]
     },
     {
-        "id": "744c587f87279573",
+        "id": "cc86fa4ce00ef5e3",
         "type": "ui_text_input",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "label": "File Path + Name",
         "tooltip": "",
-        "group": "0f421e103d692423",
+        "group": "2938c6b63c0dcba1",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -423,39 +423,39 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 110,
-        "y": 860,
+        "x": 210,
+        "y": 980,
         "wires": [
             [
-                "279b4d21d1c3eb6d",
-                "d28441343da94249"
+                "55d17ae70b2062f6",
+                "9681d970636f9d65"
             ]
         ]
     },
     {
-        "id": "3309ade52bf5ebb4",
+        "id": "729858f15a74547d",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Modbus",
-        "info": "",
-        "x": 170,
-        "y": 80,
+        "info": "Modbus controls for Dobot, only able to perform start pause continue and stop\nClear is used to clear the modbus, acts as a reset and should be used in the case modbus is not behaving properly. Genereally this feature should not be needed, only there as a precaution\nMore development can be done on this interface to be able to perform more features using modbus protocol to control the dobot\nWork is referenced from Pei Wen, link to author source is https://drive.google.com/drive/folders/1ZBdMco311Eqbl22KKzHNjs4gaVytvuDl\n",
+        "x": 630,
+        "y": 120,
         "wires": []
     },
     {
-        "id": "b02855784d708de4",
+        "id": "7e9f591c6bdd8d29",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Jog with Joints/Cartesian",
-        "info": "",
-        "x": 2050,
-        "y": 100,
+        "info": "Allows user to jog the dobot in cartesian or joint angles by sending MQTT data to the python script",
+        "x": 2510,
+        "y": 140,
         "wires": []
     },
     {
-        "id": "9428d1e31947b1f4",
+        "id": "8dc25a455f05c34c",
         "type": "mqtt in",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "topic": "topic/Terminate",
         "qos": "1",
@@ -465,18 +465,18 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 580,
-        "y": 580,
+        "x": 1160,
+        "y": 620,
         "wires": [
             [
-                "f250111d35a33008"
+                "b8d44259516ad753"
             ]
         ]
     },
     {
-        "id": "f250111d35a33008",
+        "id": "b8d44259516ad753",
         "type": "debug",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -485,16 +485,16 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
-        "y": 580,
+        "x": 1370,
+        "y": 620,
         "wires": []
     },
     {
-        "id": "9f13f070e9d98cf7",
+        "id": "d74990784dfa4f8f",
         "type": "ui_button",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
-        "group": "bdf59e834372100b",
+        "group": "51ba54fdc5fc3b0d",
         "order": 1,
         "width": 5,
         "height": 1,
@@ -509,42 +509,42 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 120,
-        "y": 1160,
+        "x": 380,
+        "y": 1200,
         "wires": [
             [
-                "aa0e3a05ee55c717",
-                "deadce14fb6eb6e4",
-                "db48fbca10af4ce4"
+                "5f0153e46fee26ca",
+                "5870ad61852f4ff8",
+                "82e7644c0961e186"
             ]
         ]
     },
     {
-        "id": "99d4397a89f05dbc",
+        "id": "5069cff690ce55e4",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Run Python App with Jog & teach point functions",
-        "info": "",
-        "x": 240,
-        "y": 1100,
+        "info": "Upon clicking this button, the node will run the python code necessary to control the dobot with\nChange the filepath of the code inside the pythonshell in node\nAlso sends data to initalize the dobot to unlock robot joints\nNote the format of typing the filepath in the pythonshell in node, example can be seen in the node",
+        "x": 500,
+        "y": 1140,
         "wires": []
     },
     {
-        "id": "c2a602ad377a755c",
+        "id": "b69b80fbe13e7411",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Stop App running",
-        "info": "",
-        "x": 160,
-        "y": 540,
+        "info": "Terminate button sends string via MQTT to python script to stop the app\n",
+        "x": 520,
+        "y": 560,
         "wires": []
     },
     {
-        "id": "851becb7eb23a3c4",
+        "id": "88de1c71a25758c0",
         "type": "ui_button",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
-        "group": "bdf59e834372100b",
+        "group": "51ba54fdc5fc3b0d",
         "order": 3,
         "width": 5,
         "height": 1,
@@ -559,18 +559,18 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 150,
-        "y": 580,
+        "x": 500,
+        "y": 600,
         "wires": [
             [
-                "526e1f59848cf408"
+                "b196faf334768013"
             ]
         ]
     },
     {
-        "id": "526e1f59848cf408",
+        "id": "b196faf334768013",
         "type": "template",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "field": "payload",
         "fieldType": "msg",
@@ -578,20 +578,20 @@
         "syntax": "mustache",
         "template": "Terminate",
         "output": "str",
-        "x": 400,
-        "y": 640,
+        "x": 940,
+        "y": 680,
         "wires": [
             [
-                "13cdab6256d4e720",
-                "42efad8e73e18b1d",
-                "6c154092498ef314"
+                "4045abb7746468ef",
+                "9aca29eb02002eac",
+                "998f1d2f210054ee"
             ]
         ]
     },
     {
-        "id": "13cdab6256d4e720",
+        "id": "4045abb7746468ef",
         "type": "mqtt out",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "topic": "topic/Terminate",
         "qos": "",
@@ -602,35 +602,35 @@
         "correl": "",
         "expiry": "",
         "broker": "8f6f8c09749e6d95",
-        "x": 600,
-        "y": 640,
+        "x": 1180,
+        "y": 680,
         "wires": []
     },
     {
-        "id": "aa0e3a05ee55c717",
+        "id": "5f0153e46fee26ca",
         "type": "pythonshell in",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
-        "pyfile": "",
+        "pyfile": "/Users/Lee Shi-Hau/OneDrive/Desktop/Internship/Python Code/DobotFunction/Jog.py",
         "virtualenv": "",
         "continuous": false,
         "stdInData": false,
-        "x": 340,
-        "y": 1160,
+        "x": 600,
+        "y": 1200,
         "wires": [
             [
-                "c41882d3c0495394"
+                "8006c43f247bbbc6"
             ]
         ]
     },
     {
-        "id": "e669e981f9de7d4f",
+        "id": "25f5e8e763902c0e",
         "type": "ui_switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "label": "Joint",
         "tooltip": "Change Cartesian(OFF) Change Joint(ON)",
-        "group": "d9fcd9fe70ec6c0d",
+        "group": "837c7d8cc0f20880",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -649,18 +649,18 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 1190,
-        "y": 1540,
+        "x": 1650,
+        "y": 1580,
         "wires": [
             [
-                "0a1af6bab08b7854"
+                "9927d8e095cdd165"
             ]
         ]
     },
     {
-        "id": "0a1af6bab08b7854",
+        "id": "9927d8e095cdd165",
         "type": "change",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "rules": [
             {
@@ -676,39 +676,39 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1390,
-        "y": 1540,
+        "x": 1850,
+        "y": 1580,
         "wires": [
             [
-                "8c916866df33811e",
-                "2d0944eb03862d0e",
-                "d92baadf52c59c31",
-                "4f8af9775bd43895",
-                "0820450c25b93c46",
-                "e8601d8e2fd314ed",
-                "d23e05e6fdbce88c",
-                "d4fc6ff7b7753334",
-                "3ae0b39d023415b6",
-                "403f70ff747be14b",
-                "4d4f61dd1eabab3c",
-                "5174496224e1d659"
+                "c379cb7287cb6904",
+                "12c0e066ab8e7fce",
+                "85af4fe14b75633b",
+                "096c9e2edfd9a60f",
+                "bfc1edc574699ee2",
+                "34f91aba16d959e8",
+                "d631d5052877a82c",
+                "e7f804f874f81908",
+                "0adf99b96743b24f",
+                "c5934f8b76553552",
+                "1f526f45fe47f9d5",
+                "d0f4c3aa5af4b6dd"
             ]
         ]
     },
     {
-        "id": "79362d1c73b40e5b",
+        "id": "bd10f93589b28e6d",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Choose Jog Mode",
-        "info": "",
-        "x": 1210,
-        "y": 1420,
+        "info": "Allows user to choose the jog mode either in cartesian or joint angles as well as update the UI to reflect the selection",
+        "x": 1670,
+        "y": 1460,
         "wires": []
     },
     {
-        "id": "1dc9d784aaaf9c47",
+        "id": "e635d8ba1e3234d0",
         "type": "mqtt in",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "topic": "topic/Angle",
         "qos": "2",
@@ -718,19 +718,19 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 120,
+        "x": 140,
         "y": 1480,
         "wires": [
             [
-                "95b7fd0a0af54fdf",
-                "61adac78921070b7"
+                "195c25b278a26c2b",
+                "ea9c65a9c3d13fa8"
             ]
         ]
     },
     {
-        "id": "d66d3765455f87fb",
+        "id": "4f1ca0b0be16ab82",
         "type": "mqtt in",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "topic": "topic/Pose",
         "qos": "2",
@@ -740,19 +740,19 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 120,
+        "x": 140,
         "y": 1620,
         "wires": [
             [
-                "2705d43494f45305",
-                "9bc5227f8324c7ea"
+                "44920f6ef5c81727",
+                "0f3807d150083584"
             ]
         ]
     },
     {
-        "id": "95b7fd0a0af54fdf",
+        "id": "195c25b278a26c2b",
         "type": "debug",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -761,14 +761,14 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 450,
+        "x": 470,
         "y": 1480,
         "wires": []
     },
     {
-        "id": "2705d43494f45305",
+        "id": "44920f6ef5c81727",
         "type": "debug",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -777,14 +777,14 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 450,
+        "x": 470,
         "y": 1620,
         "wires": []
     },
     {
-        "id": "61adac78921070b7",
+        "id": "ea9c65a9c3d13fa8",
         "type": "change",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "rules": [
             {
@@ -800,18 +800,18 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 300,
+        "x": 320,
         "y": 1540,
         "wires": [
             [
-                "8ef4876ebfa1ef48"
+                "9c3c3404d9501967"
             ]
         ]
     },
     {
-        "id": "8ef4876ebfa1ef48",
+        "id": "9c3c3404d9501967",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "Angle = global.get(\"Angle\")\nlet joint = Angle.slice(1,(Angle.length)-1)\nlet myArr1 = joint.split(\",\")\n\nPose = global.get(\"Pose\")\nlet coordinate = Pose.slice(1,(Pose.length)-1)\nlet myArr2 = coordinate.split(\",\")\n\nmsg.payload = [\n    {\n        \"Type\": \"Joint\", \n        \"J1/X\": myArr1[0],\n        \"J2/Y\": myArr1[1],\n        \"J3/Z\": myArr1[2],\n        \"J4/Rx\": myArr1[3],\n        \"J5/Ry\": myArr1[4],\n        \"J6/Rz\": myArr1[5]\n    },\n    {\n        \"Type\": \"Coord\",\n        \"J1/X\": myArr2[0],\n        \"J2/Y\": myArr2[1],\n        \"J3/Z\": myArr2[2],\n        \"J4/Rx\": myArr2[3],\n        \"J5/Ry\": myArr2[4],\n        \"J6/Rz\": myArr2[5]\n    }\n    ]\n\nreturn msg;\n\n    \n",
         "outputs": 1,
@@ -819,18 +819,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 540,
+        "x": 560,
         "y": 1560,
         "wires": [
             [
-                "ae419ab2d33b653e"
+                "849bcb72de7eae51"
             ]
         ]
     },
     {
-        "id": "9bc5227f8324c7ea",
+        "id": "0f3807d150083584",
         "type": "change",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "rules": [
             {
@@ -846,19 +846,19 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 300,
+        "x": 320,
         "y": 1580,
         "wires": [
             [
-                "8ef4876ebfa1ef48"
+                "9c3c3404d9501967"
             ]
         ]
     },
     {
-        "id": "ae419ab2d33b653e",
+        "id": "849bcb72de7eae51",
         "type": "ui_table",
-        "z": "aafced5826385ea7",
-        "group": "212f7c3299514e6d",
+        "z": "4e7469d429d4695f",
+        "group": "5a3cf28c6aa97183",
         "name": "",
         "order": 1,
         "width": 12,
@@ -866,53 +866,16 @@
         "columns": [],
         "outputs": 1,
         "cts": true,
-        "x": 810,
+        "x": 830,
         "y": 1520,
         "wires": [
             []
         ]
     },
     {
-        "id": "319db696450d1df4",
-        "type": "mqtt in",
-        "z": "aafced5826385ea7",
-        "name": "",
-        "topic": "topic/ToggleJog",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "8f6f8c09749e6d95",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 3600,
-        "y": 1600,
-        "wires": [
-            [
-                "c3a5d57bb933ff89"
-            ]
-        ]
-    },
-    {
-        "id": "c3a5d57bb933ff89",
-        "type": "debug",
-        "z": "aafced5826385ea7",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3790,
-        "y": 1600,
-        "wires": []
-    },
-    {
-        "id": "52cfb25da3b43df9",
+        "id": "4a0db2d524f2c019",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J1+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"X+\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -920,18 +883,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 160,
+        "x": 3000,
+        "y": 200,
         "wires": [
             [
-                "08ac3fcce0274a5d"
+                "9a1a18471e826347"
             ]
         ]
     },
     {
-        "id": "bbdf0c22e78300b2",
+        "id": "3e53d7343bc75e84",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -945,18 +908,18 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 240,
+        "x": 2670,
+        "y": 280,
         "wires": [
             [
-                "52cfb25da3b43df9"
+                "4a0db2d524f2c019"
             ]
         ]
     },
     {
-        "id": "bb1646c6ebe0049a",
+        "id": "20fe28e1356499aa",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -970,18 +933,18 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 340,
+        "x": 2670,
+        "y": 380,
         "wires": [
             [
-                "e49dae8f155de474"
+                "7cc479bc7979527a"
             ]
         ]
     },
     {
-        "id": "e49dae8f155de474",
+        "id": "7cc479bc7979527a",
         "type": "template",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "field": "payload",
         "fieldType": "msg",
@@ -989,18 +952,18 @@
         "syntax": "mustache",
         "template": "",
         "output": "str",
-        "x": 3280,
-        "y": 2320,
+        "x": 3740,
+        "y": 2360,
         "wires": [
             [
-                "08ac3fcce0274a5d"
+                "9a1a18471e826347"
             ]
         ]
     },
     {
-        "id": "64247f112516cd77",
+        "id": "dfd165d959dd8fd0",
         "type": "mqtt in",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "topic": "topic/Jog",
         "qos": "2",
@@ -1010,18 +973,18 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 3580,
-        "y": 1420,
+        "x": 4040,
+        "y": 1460,
         "wires": [
             [
-                "a9bb66572a235c14"
+                "a46b507dfc807feb"
             ]
         ]
     },
     {
-        "id": "08ac3fcce0274a5d",
+        "id": "9a1a18471e826347",
         "type": "mqtt out",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "topic": "topic/Jog",
         "qos": "",
@@ -1032,14 +995,14 @@
         "correl": "",
         "expiry": "",
         "broker": "8f6f8c09749e6d95",
-        "x": 3580,
-        "y": 1480,
+        "x": 4040,
+        "y": 1520,
         "wires": []
     },
     {
-        "id": "a9bb66572a235c14",
+        "id": "a46b507dfc807feb",
         "type": "debug",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -1048,15 +1011,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3770,
-        "y": 1420,
+        "x": 4230,
+        "y": 1460,
         "wires": []
     },
     {
-        "id": "59a972c5957ecbe7",
+        "id": "09bbab39d08bba45",
         "type": "ui_text",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "order": 2,
         "width": 2,
         "height": 1,
@@ -1065,14 +1028,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1770,
-        "y": 1320,
+        "x": 2230,
+        "y": 1360,
         "wires": []
     },
     {
-        "id": "8c916866df33811e",
+        "id": "c379cb7287cb6904",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J1+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"X+\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1080,28 +1043,28 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1620,
-        "y": 1320,
+        "x": 2080,
+        "y": 1360,
         "wires": [
             [
-                "59a972c5957ecbe7"
+                "09bbab39d08bba45"
             ]
         ]
     },
     {
-        "id": "61772b4bbd01eb79",
+        "id": "f99695ac62c38ddb",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "J1+/X+",
         "info": "",
-        "x": 2010,
-        "y": 300,
+        "x": 2470,
+        "y": 340,
         "wires": []
     },
     {
-        "id": "51aff8bdfe2b23a3",
+        "id": "f3fd0a6d45fdad83",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J1-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"X-\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1109,18 +1072,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 420,
+        "x": 3000,
+        "y": 460,
         "wires": [
             [
-                "08ac3fcce0274a5d"
+                "9a1a18471e826347"
             ]
         ]
     },
     {
-        "id": "55b41a578a07ce54",
+        "id": "e17dfdb568df02f1",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -1134,18 +1097,18 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 480,
+        "x": 2670,
+        "y": 520,
         "wires": [
             [
-                "51aff8bdfe2b23a3"
+                "f3fd0a6d45fdad83"
             ]
         ]
     },
     {
-        "id": "9ae4a5015d99a2d5",
+        "id": "c2ca6c04c89a8927",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -1159,28 +1122,28 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 560,
+        "x": 2670,
+        "y": 600,
         "wires": [
             [
-                "e49dae8f155de474"
+                "7cc479bc7979527a"
             ]
         ]
     },
     {
-        "id": "81b82158c9310aee",
+        "id": "64acbdba89fca578",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "J1-/X-",
         "info": "",
-        "x": 2010,
-        "y": 520,
+        "x": 2470,
+        "y": 560,
         "wires": []
     },
     {
-        "id": "08c32a1b79d4279b",
+        "id": "b8787636412dcc87",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J2+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Y+\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1188,18 +1151,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 640,
+        "x": 3000,
+        "y": 680,
         "wires": [
             [
-                "08ac3fcce0274a5d"
+                "9a1a18471e826347"
             ]
         ]
     },
     {
-        "id": "f3d4d5011b00e24c",
+        "id": "93b4fc0eaf7b42fc",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -1213,18 +1176,18 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 720,
+        "x": 2670,
+        "y": 760,
         "wires": [
             [
-                "08c32a1b79d4279b"
+                "b8787636412dcc87"
             ]
         ]
     },
     {
-        "id": "ce7f221ff1733f8e",
+        "id": "fb87fbed64fd88f8",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -1238,28 +1201,28 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 800,
+        "x": 2670,
+        "y": 840,
         "wires": [
             [
-                "e49dae8f155de474"
+                "7cc479bc7979527a"
             ]
         ]
     },
     {
-        "id": "c414d059b46e3e5f",
+        "id": "974893b60de6d4c9",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "J2+/Y+",
         "info": "",
-        "x": 2010,
-        "y": 760,
+        "x": 2470,
+        "y": 800,
         "wires": []
     },
     {
-        "id": "4e0709d885d9b92a",
+        "id": "d5de8c031bd693a3",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J2-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Y-\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1267,18 +1230,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 880,
+        "x": 3000,
+        "y": 920,
         "wires": [
             [
-                "08ac3fcce0274a5d"
+                "9a1a18471e826347"
             ]
         ]
     },
     {
-        "id": "8c370173d4a1762d",
+        "id": "1b2a72c39ebf0bab",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -1292,18 +1255,18 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 960,
+        "x": 2670,
+        "y": 1000,
         "wires": [
             [
-                "4e0709d885d9b92a"
+                "d5de8c031bd693a3"
             ]
         ]
     },
     {
-        "id": "7ddfbef3ce7f143a",
+        "id": "15516d5ee856409e",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -1317,29 +1280,29 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 1040,
+        "x": 2670,
+        "y": 1080,
         "wires": [
             [
-                "e49dae8f155de474"
+                "7cc479bc7979527a"
             ]
         ]
     },
     {
-        "id": "a5aca23fcc21c23c",
+        "id": "c85fd1ac5980f8b0",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "J2-/Y-",
         "info": "",
-        "x": 2010,
-        "y": 1000,
+        "x": 2470,
+        "y": 1040,
         "wires": []
     },
     {
-        "id": "b0499cc8379433cb",
+        "id": "e2128a49fcae402a",
         "type": "ui_text",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "order": 4,
         "width": 2,
         "height": 1,
@@ -1348,14 +1311,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1770,
-        "y": 1360,
+        "x": 2230,
+        "y": 1400,
         "wires": []
     },
     {
-        "id": "2d0944eb03862d0e",
+        "id": "12c0e066ab8e7fce",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J1-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"X-\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1363,19 +1326,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1620,
-        "y": 1360,
+        "x": 2080,
+        "y": 1400,
         "wires": [
             [
-                "b0499cc8379433cb"
+                "e2128a49fcae402a"
             ]
         ]
     },
     {
-        "id": "62d1a12ccbd6f697",
+        "id": "9103caa7ae6132e6",
         "type": "ui_text",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "order": 6,
         "width": 2,
         "height": 1,
@@ -1384,14 +1347,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1770,
-        "y": 1400,
+        "x": 2230,
+        "y": 1440,
         "wires": []
     },
     {
-        "id": "d92baadf52c59c31",
+        "id": "85af4fe14b75633b",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J2+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Y+\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1399,19 +1362,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1620,
-        "y": 1400,
+        "x": 2080,
+        "y": 1440,
         "wires": [
             [
-                "62d1a12ccbd6f697"
+                "9103caa7ae6132e6"
             ]
         ]
     },
     {
-        "id": "1e4b96fe6232ff19",
+        "id": "b2c1c88b58b3c819",
         "type": "ui_text",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "order": 8,
         "width": 2,
         "height": 1,
@@ -1420,14 +1383,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1770,
-        "y": 1440,
+        "x": 2230,
+        "y": 1480,
         "wires": []
     },
     {
-        "id": "4f8af9775bd43895",
+        "id": "096c9e2edfd9a60f",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J2-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Y-\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1435,18 +1398,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1620,
-        "y": 1440,
+        "x": 2080,
+        "y": 1480,
         "wires": [
             [
-                "1e4b96fe6232ff19"
+                "b2c1c88b58b3c819"
             ]
         ]
     },
     {
-        "id": "245b40f9145a1c0c",
+        "id": "a091dc4ab9a829d4",
         "type": "inject",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "props": [
             {
@@ -1464,20 +1427,20 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 1190,
-        "y": 1480,
+        "x": 1650,
+        "y": 1520,
         "wires": [
             [
-                "0a1af6bab08b7854",
-                "e669e981f9de7d4f"
+                "9927d8e095cdd165",
+                "25f5e8e763902c0e"
             ]
         ]
     },
     {
-        "id": "5f351527f69fc918",
+        "id": "5bb01aa2fc1bb962",
         "type": "ui_text",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "order": 10,
         "width": 2,
         "height": 1,
@@ -1486,14 +1449,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1770,
-        "y": 1480,
+        "x": 2230,
+        "y": 1520,
         "wires": []
     },
     {
-        "id": "0820450c25b93c46",
+        "id": "bfc1edc574699ee2",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J3+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Z+\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1501,18 +1464,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1620,
-        "y": 1480,
+        "x": 2080,
+        "y": 1520,
         "wires": [
             [
-                "5f351527f69fc918"
+                "5bb01aa2fc1bb962"
             ]
         ]
     },
     {
-        "id": "5a84b133e022dc81",
+        "id": "39f6b0c8bc1a3d2e",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J3+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Z+\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1520,18 +1483,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 1120,
+        "x": 3000,
+        "y": 1160,
         "wires": [
             [
-                "08ac3fcce0274a5d"
+                "9a1a18471e826347"
             ]
         ]
     },
     {
-        "id": "19e60b74be76edc8",
+        "id": "feaa894e4ed184d4",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -1545,18 +1508,18 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 1200,
+        "x": 2670,
+        "y": 1240,
         "wires": [
             [
-                "5a84b133e022dc81"
+                "39f6b0c8bc1a3d2e"
             ]
         ]
     },
     {
-        "id": "d7a4229b20e9ab5b",
+        "id": "1061c0fa46e3bfa9",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -1570,29 +1533,29 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 1280,
+        "x": 2670,
+        "y": 1320,
         "wires": [
             [
-                "e49dae8f155de474"
+                "7cc479bc7979527a"
             ]
         ]
     },
     {
-        "id": "d00a6889e63e8520",
+        "id": "127147f7920ad27d",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "J3+/Z+",
         "info": "",
-        "x": 2010,
-        "y": 1240,
+        "x": 2470,
+        "y": 1280,
         "wires": []
     },
     {
-        "id": "e738da6093b1cf6a",
+        "id": "532db51f87165167",
         "type": "ui_text",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "order": 12,
         "width": 2,
         "height": 1,
@@ -1601,14 +1564,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1770,
-        "y": 1520,
+        "x": 2230,
+        "y": 1560,
         "wires": []
     },
     {
-        "id": "e8601d8e2fd314ed",
+        "id": "34f91aba16d959e8",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J3-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Z-\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1616,19 +1579,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1620,
-        "y": 1520,
+        "x": 2080,
+        "y": 1560,
         "wires": [
             [
-                "e738da6093b1cf6a"
+                "532db51f87165167"
             ]
         ]
     },
     {
-        "id": "1290a96e48f175ab",
+        "id": "6eba00196bdfd663",
         "type": "ui_text",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "order": 14,
         "width": 2,
         "height": 1,
@@ -1637,14 +1600,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1770,
-        "y": 1560,
+        "x": 2230,
+        "y": 1600,
         "wires": []
     },
     {
-        "id": "d23e05e6fdbce88c",
+        "id": "d631d5052877a82c",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J4+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"RX+\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1652,19 +1615,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1620,
-        "y": 1560,
+        "x": 2080,
+        "y": 1600,
         "wires": [
             [
-                "1290a96e48f175ab"
+                "6eba00196bdfd663"
             ]
         ]
     },
     {
-        "id": "5d78580e2cf8a36c",
+        "id": "4bf50a286eacdc0f",
         "type": "ui_text",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "order": 16,
         "width": 2,
         "height": 1,
@@ -1673,14 +1636,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1770,
-        "y": 1600,
+        "x": 2230,
+        "y": 1640,
         "wires": []
     },
     {
-        "id": "d4fc6ff7b7753334",
+        "id": "e7f804f874f81908",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J4-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"RX-\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1688,19 +1651,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1620,
-        "y": 1600,
+        "x": 2080,
+        "y": 1640,
         "wires": [
             [
-                "5d78580e2cf8a36c"
+                "4bf50a286eacdc0f"
             ]
         ]
     },
     {
-        "id": "2006e90ef9e966f2",
+        "id": "71d280250479e6ae",
         "type": "ui_text",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "order": 18,
         "width": 2,
         "height": 1,
@@ -1709,14 +1672,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1770,
-        "y": 1640,
+        "x": 2230,
+        "y": 1680,
         "wires": []
     },
     {
-        "id": "3ae0b39d023415b6",
+        "id": "0adf99b96743b24f",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J5+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"RY+\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1724,19 +1687,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1620,
-        "y": 1640,
+        "x": 2080,
+        "y": 1680,
         "wires": [
             [
-                "2006e90ef9e966f2"
+                "71d280250479e6ae"
             ]
         ]
     },
     {
-        "id": "cfbcb1e7d67a844c",
+        "id": "272a9be0ccac38ca",
         "type": "ui_text",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "order": 20,
         "width": 2,
         "height": 1,
@@ -1745,14 +1708,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1770,
-        "y": 1680,
+        "x": 2230,
+        "y": 1720,
         "wires": []
     },
     {
-        "id": "403f70ff747be14b",
+        "id": "c5934f8b76553552",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J5-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"RY-\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1760,19 +1723,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1620,
-        "y": 1680,
+        "x": 2080,
+        "y": 1720,
         "wires": [
             [
-                "cfbcb1e7d67a844c"
+                "272a9be0ccac38ca"
             ]
         ]
     },
     {
-        "id": "5358406b895f139a",
+        "id": "5caf4fb549fa0778",
         "type": "ui_text",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "order": 22,
         "width": 2,
         "height": 1,
@@ -1781,14 +1744,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1770,
-        "y": 1720,
+        "x": 2230,
+        "y": 1760,
         "wires": []
     },
     {
-        "id": "4d4f61dd1eabab3c",
+        "id": "1f526f45fe47f9d5",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J6+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"RZ+\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1796,19 +1759,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1620,
-        "y": 1720,
+        "x": 2080,
+        "y": 1760,
         "wires": [
             [
-                "5358406b895f139a"
+                "5caf4fb549fa0778"
             ]
         ]
     },
     {
-        "id": "cb17fc06a02dfa4c",
+        "id": "be6bcc7cd3126b82",
         "type": "ui_text",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "order": 24,
         "width": 2,
         "height": 1,
@@ -1817,14 +1780,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1770,
-        "y": 1760,
+        "x": 2230,
+        "y": 1800,
         "wires": []
     },
     {
-        "id": "5174496224e1d659",
+        "id": "d0f4c3aa5af4b6dd",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J6-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"RZ-\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1832,18 +1795,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1620,
-        "y": 1760,
+        "x": 2080,
+        "y": 1800,
         "wires": [
             [
-                "cb17fc06a02dfa4c"
+                "be6bcc7cd3126b82"
             ]
         ]
     },
     {
-        "id": "168fa691ea3096cf",
+        "id": "c5c6340cac8321b1",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J3-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Z-\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1851,18 +1814,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 1360,
+        "x": 3000,
+        "y": 1400,
         "wires": [
             [
-                "08ac3fcce0274a5d"
+                "9a1a18471e826347"
             ]
         ]
     },
     {
-        "id": "caa7b5f95c561887",
+        "id": "619a8131b641673a",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -1876,18 +1839,18 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 1440,
+        "x": 2670,
+        "y": 1480,
         "wires": [
             [
-                "168fa691ea3096cf"
+                "c5c6340cac8321b1"
             ]
         ]
     },
     {
-        "id": "8ef7165610191daf",
+        "id": "f252a683af3b7e3d",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -1901,28 +1864,28 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 1520,
+        "x": 2670,
+        "y": 1560,
         "wires": [
             [
-                "e49dae8f155de474"
+                "7cc479bc7979527a"
             ]
         ]
     },
     {
-        "id": "4bbff94dee4383a0",
+        "id": "8924ef32af58aa80",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "J3-/Z-",
         "info": "",
-        "x": 2010,
-        "y": 1480,
+        "x": 2470,
+        "y": 1520,
         "wires": []
     },
     {
-        "id": "c9e2a0a2903e61c5",
+        "id": "cf0a6c07942a80b2",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J4+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Rx+\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -1930,18 +1893,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 1600,
+        "x": 3000,
+        "y": 1640,
         "wires": [
             [
-                "08ac3fcce0274a5d"
+                "9a1a18471e826347"
             ]
         ]
     },
     {
-        "id": "09514bdc651f7de4",
+        "id": "fa8b64d5ddd20639",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -1955,18 +1918,18 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 1680,
+        "x": 2670,
+        "y": 1720,
         "wires": [
             [
-                "c9e2a0a2903e61c5"
+                "cf0a6c07942a80b2"
             ]
         ]
     },
     {
-        "id": "fbf915461480cc23",
+        "id": "bf2a6d514fc680ec",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -1980,28 +1943,28 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 1780,
+        "x": 2670,
+        "y": 1820,
         "wires": [
             [
-                "e49dae8f155de474"
+                "7cc479bc7979527a"
             ]
         ]
     },
     {
-        "id": "e97ad97e484fc4ca",
+        "id": "dbdf0cfddbbd461d",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "J4+/RX+",
         "info": "",
-        "x": 2020,
-        "y": 1740,
+        "x": 2480,
+        "y": 1780,
         "wires": []
     },
     {
-        "id": "fc11a8a9337417d0",
+        "id": "a8cb83c0c26bde43",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J4-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Rx-\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -2009,18 +1972,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 1860,
+        "x": 3000,
+        "y": 1900,
         "wires": [
             [
-                "08ac3fcce0274a5d"
+                "9a1a18471e826347"
             ]
         ]
     },
     {
-        "id": "6191b0acb732185d",
+        "id": "c8d5756eb66e4f81",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -2034,18 +1997,18 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 1920,
+        "x": 2670,
+        "y": 1960,
         "wires": [
             [
-                "fc11a8a9337417d0"
+                "a8cb83c0c26bde43"
             ]
         ]
     },
     {
-        "id": "bcb384155769af98",
+        "id": "fb5345c7b167abf0",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -2059,28 +2022,28 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 2000,
+        "x": 2670,
+        "y": 2040,
         "wires": [
             [
-                "e49dae8f155de474"
+                "7cc479bc7979527a"
             ]
         ]
     },
     {
-        "id": "a7a19b55243ae037",
+        "id": "0653645bdc2eb9a5",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "J4-/RX-",
         "info": "",
-        "x": 2010,
-        "y": 1960,
+        "x": 2470,
+        "y": 2000,
         "wires": []
     },
     {
-        "id": "bba8e16c8179c4b5",
+        "id": "c21b1336a51e2f27",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J5+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Ry+\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -2088,18 +2051,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 2080,
+        "x": 3000,
+        "y": 2120,
         "wires": [
             [
-                "08ac3fcce0274a5d"
+                "9a1a18471e826347"
             ]
         ]
     },
     {
-        "id": "7cd131bc44975c28",
+        "id": "2692b6a7365c8b2e",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -2113,18 +2076,18 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 2160,
+        "x": 2670,
+        "y": 2200,
         "wires": [
             [
-                "bba8e16c8179c4b5"
+                "c21b1336a51e2f27"
             ]
         ]
     },
     {
-        "id": "a81df610d5f05557",
+        "id": "8811d2096f800b8f",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -2138,28 +2101,28 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 2240,
+        "x": 2670,
+        "y": 2280,
         "wires": [
             [
-                "e49dae8f155de474"
+                "7cc479bc7979527a"
             ]
         ]
     },
     {
-        "id": "ebe2cc0bb6e4f1cc",
+        "id": "1d2db0da8b8f5e8b",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "J5+/Ry+",
         "info": "",
-        "x": 2020,
-        "y": 2200,
+        "x": 2480,
+        "y": 2240,
         "wires": []
     },
     {
-        "id": "865d129b8bc45d7c",
+        "id": "91791fe7bc7a4532",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J5-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Ry-\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -2167,18 +2130,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 2320,
+        "x": 3000,
+        "y": 2360,
         "wires": [
             [
-                "08ac3fcce0274a5d"
+                "9a1a18471e826347"
             ]
         ]
     },
     {
-        "id": "4e4c9f9c10bafa21",
+        "id": "f4d78ad9a0468510",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -2192,18 +2155,18 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 2400,
+        "x": 2670,
+        "y": 2440,
         "wires": [
             [
-                "865d129b8bc45d7c"
+                "91791fe7bc7a4532"
             ]
         ]
     },
     {
-        "id": "bbc7032c35d3a0ce",
+        "id": "efde2be90e7c58ce",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -2217,28 +2180,28 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 2480,
+        "x": 2670,
+        "y": 2520,
         "wires": [
             [
-                "e49dae8f155de474"
+                "7cc479bc7979527a"
             ]
         ]
     },
     {
-        "id": "62aeef35cdc7f623",
+        "id": "62cd8fc6f8b9a54b",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "J5-/Ry-",
         "info": "",
-        "x": 2010,
-        "y": 2440,
+        "x": 2470,
+        "y": 2480,
         "wires": []
     },
     {
-        "id": "dc7248ad403d6fd1",
+        "id": "f9481a6cfc3fbc73",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J6+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Rz+\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -2246,18 +2209,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 2560,
+        "x": 3000,
+        "y": 2600,
         "wires": [
             [
-                "08ac3fcce0274a5d"
+                "9a1a18471e826347"
             ]
         ]
     },
     {
-        "id": "06e4bbb9c02c6721",
+        "id": "145eaf6ac80a5156",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -2271,18 +2234,18 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 2640,
+        "x": 2670,
+        "y": 2680,
         "wires": [
             [
-                "dc7248ad403d6fd1"
+                "f9481a6cfc3fbc73"
             ]
         ]
     },
     {
-        "id": "d5af92f10b3fc30c",
+        "id": "5bfb40ad8478c21d",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -2296,28 +2259,28 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 2720,
+        "x": 2670,
+        "y": 2760,
         "wires": [
             [
-                "e49dae8f155de474"
+                "7cc479bc7979527a"
             ]
         ]
     },
     {
-        "id": "e1c68cd22cc99638",
+        "id": "fd36b22978972ba6",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "J6+/RZ+",
         "info": "",
-        "x": 2020,
-        "y": 2680,
+        "x": 2480,
+        "y": 2720,
         "wires": []
     },
     {
-        "id": "810bffbb97361509",
+        "id": "c0144f54a210a501",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J6-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Rz-\"\n    return msg;\n}\nreturn msg;",
         "outputs": 1,
@@ -2325,18 +2288,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 2800,
+        "x": 3000,
+        "y": 2840,
         "wires": [
             [
-                "08ac3fcce0274a5d"
+                "9a1a18471e826347"
             ]
         ]
     },
     {
-        "id": "8da09f841c98dac5",
+        "id": "50da25188c8b7a08",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -2350,18 +2313,18 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 2880,
+        "x": 2670,
+        "y": 2920,
         "wires": [
             [
-                "810bffbb97361509"
+                "c0144f54a210a501"
             ]
         ]
     },
     {
-        "id": "077759363bf61761",
+        "id": "df637d0bb1ffb569",
         "type": "switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -2375,30 +2338,30 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2210,
-        "y": 2960,
+        "x": 2670,
+        "y": 3000,
         "wires": [
             [
-                "e49dae8f155de474"
+                "7cc479bc7979527a"
             ]
         ]
     },
     {
-        "id": "9f5d0d0ce923e6a3",
+        "id": "de82fc03d75c79f4",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "J6-/RZ-",
         "info": "",
-        "x": 2010,
-        "y": 2920,
+        "x": 2470,
+        "y": 2960,
         "wires": []
     },
     {
-        "id": "9020fc4297f0f928",
+        "id": "7017733c1cc962bc",
         "type": "ui_led",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "order": 2,
-        "group": "bdf59e834372100b",
+        "group": "51ba54fdc5fc3b0d",
         "width": 1,
         "height": 2,
         "label": "",
@@ -2420,14 +2383,14 @@
         "shape": "square",
         "showGlow": true,
         "name": "",
-        "x": 950,
-        "y": 940,
+        "x": 1530,
+        "y": 980,
         "wires": []
     },
     {
-        "id": "deadce14fb6eb6e4",
+        "id": "5870ad61852f4ff8",
         "type": "template",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "field": "payload",
         "fieldType": "msg",
@@ -2435,18 +2398,18 @@
         "syntax": "mustache",
         "template": "RunApp",
         "output": "str",
-        "x": 380,
-        "y": 1020,
+        "x": 840,
+        "y": 1060,
         "wires": [
             [
-                "42efad8e73e18b1d"
+                "9aca29eb02002eac"
             ]
         ]
     },
     {
-        "id": "5f052460dbce6c6f",
+        "id": "c77bde39d49b6ba3",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "status = flow.get(\"payload\")\nif (status == \"Terminate\")\n{\n    msg.payload == \"false\"\n}\nelse if (status == \"RunApp\")\n{\n    msg.payload == \"true\"\n}\nreturn msg;",
         "outputs": 1,
@@ -2454,18 +2417,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
-        "y": 940,
+        "x": 1340,
+        "y": 980,
         "wires": [
             [
-                "9020fc4297f0f928"
+                "7017733c1cc962bc"
             ]
         ]
     },
     {
-        "id": "42efad8e73e18b1d",
+        "id": "9aca29eb02002eac",
         "type": "change",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "rules": [
             {
@@ -2481,18 +2444,18 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 560,
-        "y": 940,
+        "x": 1140,
+        "y": 980,
         "wires": [
             [
-                "5f052460dbce6c6f"
+                "c77bde39d49b6ba3"
             ]
         ]
     },
     {
-        "id": "5fe8b08aea66052e",
+        "id": "7b7f6eb8077fcd6b",
         "type": "inject",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "props": [
             {
@@ -2510,18 +2473,18 @@
         "topic": "",
         "payload": "Terminate",
         "payloadType": "str",
-        "x": 760,
-        "y": 1040,
+        "x": 1340,
+        "y": 1080,
         "wires": [
             [
-                "9020fc4297f0f928"
+                "7017733c1cc962bc"
             ]
         ]
     },
     {
-        "id": "c41882d3c0495394",
+        "id": "8006c43f247bbbc6",
         "type": "debug",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -2530,24 +2493,24 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 550,
-        "y": 1160,
+        "x": 810,
+        "y": 1200,
         "wires": []
     },
     {
-        "id": "6a76711fb18209de",
+        "id": "67e33826d23446f6",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Get Angle and Pose data",
-        "info": "",
-        "x": 170,
+        "info": "This will receive angle and pose data from MQTT and format it to print into a table node",
+        "x": 190,
         "y": 1420,
         "wires": []
     },
     {
-        "id": "e3a62c7679459d1e",
+        "id": "f2e91b0a70a86bdb",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "msg.payload = [\n    {\n        \"Type\": \"Joint\", \n        \"J1/X\": \"0\",\n        \"J2/Y\": \"0\",\n        \"J3/Z\": \"0\",\n        \"J4/Rx\": \"0\",\n        \"J5/Ry\": \"0\",\n        \"J6/Rz\": \"0\"\n    },\n    {\n        \"Type\": \"Coord\",\n        \"J1/X\": \"0\",\n        \"J2/Y\": \"0\",\n        \"J3/Z\": \"0\",\n        \"J4/Rx\": \"0\",\n        \"J5/Ry\": \"0\",\n        \"J6/Rz\": \"0\"\n    }\n    ]\n\nreturn msg;\n\n    \n",
         "outputs": 1,
@@ -2555,19 +2518,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 600,
+        "x": 620,
         "y": 1380,
         "wires": [
             [
-                "ae419ab2d33b653e",
-                "a534bfad64eb214d"
+                "849bcb72de7eae51",
+                "5a51410868d5a9e1"
             ]
         ]
     },
     {
-        "id": "5e6170d87cb94126",
+        "id": "11ddb4b8f8746614",
         "type": "inject",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "props": [
             {
@@ -2584,18 +2547,18 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 410,
+        "x": 430,
         "y": 1380,
         "wires": [
             [
-                "e3a62c7679459d1e"
+                "f2e91b0a70a86bdb"
             ]
         ]
     },
     {
-        "id": "3c9270d52dd55134",
+        "id": "92d3b9aa338720c9",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "path = global.get(\"path\")\nsend = \"\"\nfullpath = send.concat(\"\\\"\",path,\"\\\"\")\nmsg.payload = fullpath\nreturn msg;",
         "outputs": 1,
@@ -2603,19 +2566,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 220,
-        "y": 940,
+        "x": 620,
+        "y": 980,
         "wires": [
             [
-                "5e8528108c6a8802",
-                "db09176e96a1b22a"
+                "2fa584362d3b709d",
+                "558f5fcfbfdc7dd6"
             ]
         ]
     },
     {
-        "id": "279b4d21d1c3eb6d",
+        "id": "55d17ae70b2062f6",
         "type": "change",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "rules": [
             {
@@ -2631,18 +2594,18 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
-        "y": 860,
+        "x": 420,
+        "y": 980,
         "wires": [
             [
-                "3c9270d52dd55134"
+                "92d3b9aa338720c9"
             ]
         ]
     },
     {
-        "id": "d28441343da94249",
+        "id": "9681d970636f9d65",
         "type": "debug",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -2651,67 +2614,67 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 360,
-        "y": 780,
+        "x": 430,
+        "y": 900,
         "wires": []
     },
     {
-        "id": "22ae41ebb453a953",
+        "id": "ba04fbaf3565330c",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Run Python File",
-        "info": "",
-        "x": 100,
-        "y": 820,
+        "info": "Enter the filepath of a python code to run, and the app will run it. This is meant to work in conjunction with the blockly python app.\nThis function is unable to loop code indefinitely, it will only run the script once.",
+        "x": 200,
+        "y": 940,
         "wires": []
     },
     {
-        "id": "20013de88026b5a1",
+        "id": "c9fd2e531b67b318",
         "type": "mqtt in",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "topic": "topic/Angle",
         "qos": "2",
         "datatype": "auto",
-        "broker": "b5228ecf2ba8b16a",
+        "broker": "85a361c9db51db9d",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 100,
-        "y": 1960,
+        "x": 560,
+        "y": 2000,
         "wires": [
             [
-                "5e515d66137ebeb6"
+                "fb152aebe70f4b56"
             ]
         ]
     },
     {
-        "id": "cef9361f739a8e95",
+        "id": "635f39707263726e",
         "type": "mqtt in",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "topic": "topic/Pose",
         "qos": "2",
         "datatype": "auto",
-        "broker": "b5228ecf2ba8b16a",
+        "broker": "85a361c9db51db9d",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 100,
-        "y": 2060,
+        "x": 560,
+        "y": 2100,
         "wires": [
             [
-                "2e7a493005c9f1ba"
+                "fa091ef922b80148"
             ]
         ]
     },
     {
-        "id": "a534bfad64eb214d",
+        "id": "5a51410868d5a9e1",
         "type": "ui_table",
-        "z": "aafced5826385ea7",
-        "group": "cfab6dd37ac3a75c",
+        "z": "4e7469d429d4695f",
+        "group": "78de5537cef60a1e",
         "name": "",
         "order": 1,
         "width": 9,
@@ -2719,16 +2682,16 @@
         "columns": [],
         "outputs": 1,
         "cts": true,
-        "x": 870,
-        "y": 1940,
+        "x": 1330,
+        "y": 1980,
         "wires": [
             []
         ]
     },
     {
-        "id": "5e515d66137ebeb6",
+        "id": "fb152aebe70f4b56",
         "type": "change",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "rules": [
             {
@@ -2744,19 +2707,19 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 380,
-        "y": 1960,
+        "x": 840,
+        "y": 2000,
         "wires": [
             [
-                "766c59a832136806",
-                "a9ca1e05ecd355da"
+                "e6e3688579e0fb95",
+                "9ca27d8c476b5661"
             ]
         ]
     },
     {
-        "id": "2e7a493005c9f1ba",
+        "id": "fa091ef922b80148",
         "type": "change",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "rules": [
             {
@@ -2772,19 +2735,19 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 360,
-        "y": 2060,
+        "x": 820,
+        "y": 2100,
         "wires": [
             [
-                "766c59a832136806",
-                "a9ca1e05ecd355da"
+                "e6e3688579e0fb95",
+                "9ca27d8c476b5661"
             ]
         ]
     },
     {
-        "id": "766c59a832136806",
+        "id": "e6e3688579e0fb95",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "let angle = flow.get(\"jointAngle\");\nlet pose = flow.get(\"pose\");\n\nlet angleStr = angle.slice(1,angle.length-1);\nlet angleArray = angleStr.split(\",\");\n\nlet poseStr = pose.slice(1,angle.length-1);\nlet poseArray = poseStr.split(\",\");\n\nmsg.payload = [\n    {\n        J1_x : angleArray[0],\n        J2_y : angleArray[1],\n        J3_z : angleArray[2],\n        J4_Rx : angleArray[3],\n        J5_Ry : angleArray[4],\n        J6_Rz : angleArray[5]\n    },\n    {\n        J1_x : poseArray[0],\n        J2_y : poseArray[1],\n        J3_z : poseArray[2],\n        J4_Rx : poseArray[3],\n        J5_Ry : poseArray[4],\n        J6_Rz : poseArray[5]\n    }\n];\n\n\nreturn msg;",
         "outputs": 1,
@@ -2792,20 +2755,20 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 720,
-        "y": 1940,
+        "x": 1180,
+        "y": 1980,
         "wires": [
             [
-                "a534bfad64eb214d"
+                "5a51410868d5a9e1"
             ]
         ]
     },
     {
-        "id": "5fd609a79daa40a0",
+        "id": "c6f54a90da3252ae",
         "type": "ui_button",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
-        "group": "c60bcee9cc384a91",
+        "group": "30f7f32d0cece33f",
         "order": 1,
         "width": 9,
         "height": 1,
@@ -2820,18 +2783,18 @@
         "payloadType": "bool",
         "topic": "savePoints",
         "topicType": "str",
-        "x": 110,
-        "y": 2200,
+        "x": 570,
+        "y": 2240,
         "wires": [
             [
-                "a9ca1e05ecd355da"
+                "9ca27d8c476b5661"
             ]
         ]
     },
     {
-        "id": "a9ca1e05ecd355da",
+        "id": "9ca27d8c476b5661",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "\nlet angle = flow.get(\"jointAngle\");\nlet pose = flow.get(\"pose\");\n\n\nlet angleStr = angle.slice(1,angle.length-1);\nlet angleArray = angleStr.split(\",\");\n\n\nlet poseStr = pose.slice(1,angle.length-1);\nlet poseArray = poseStr.split(\",\");\n\nvar storeArray = flow.get(\"storeArray\") || [];\nvar clearArray = flow.get(\"clearArray\") || \"\";\nvar counter = flow.get(\"counter\") || 0;\nvar delete_rowNum = global.get(\"delete_rowNum\") || 0; \nvar cover_rowNum = global.get(\"cover_rowNum\") || 0;\n\n//var optionsArr = flow.get(\"optionsArr\") || [];\n\n\nif(msg.topic == \"savePoints\")\n{\n    if ((storeArray.length == 0 ) || (clearArray == 1))\n    {\n        counter++;\n        //optionsArr = [counter];\n        storeArray = [\n        {\n            Points: counter,\n            J1_x : angleArray[0],\n            J2_y : angleArray[1],\n            J3_z : angleArray[2],\n            J4_Rx : angleArray[3],\n            J5_Ry : angleArray[4],\n            J6_Rz : angleArray[5]\n            \n        },\n        {\n            Points: \"\",\n            J1_x : poseArray[0],\n            J2_y : poseArray[1],\n            J3_z : poseArray[2],\n            J4_Rx : poseArray[3],\n            J5_Ry : poseArray[4],\n            J6_Rz : poseArray[5]\n        }\n        ];\n        clearArray = 0;\n    }\n    else\n    {\n        counter++;\n        //optionsArr.push(counter);\n        storeArray.push(\n            {\n                Points:counter,\n                J1_x : angleArray[0],\n                J2_y : angleArray[1],\n                J3_z : angleArray[2],\n                J4_Rx : angleArray[3],\n                J5_Ry : angleArray[4],\n                J6_Rz : angleArray[5]\n                \n            },\n            {\n                Points: \"\",\n                J1_x : poseArray[0],\n                J2_y : poseArray[1],\n                J3_z : poseArray[2],\n                J4_Rx : poseArray[3],\n                J5_Ry : poseArray[4],\n                J6_Rz : poseArray[5]\n                \n            }\n        )\n    }\n}\nelse if (msg.topic == \"deletePoint\")\n{\n    storeArray[delete_rowNum].J1_x =0;\n    storeArray[delete_rowNum].J2_y =0;\n    storeArray[delete_rowNum].J3_z =0;\n    storeArray[delete_rowNum].J4_Rx =0;\n    storeArray[delete_rowNum].J5_Ry =0;\n    storeArray[delete_rowNum].J6_Rz =0;\n    \n\n    storeArray[delete_rowNum+1] = \n    {\n        J1_x :0,\n        J2_y :0,\n        J3_z :0,\n        J4_Rx :0,\n        J5_Ry :0,\n        J6_Rz :0,\n    }\n}\nelse if(msg.topic == \"cover\")\n{\n    storeArray[cover_rowNum].J1_x =angleArray[0];\n    storeArray[cover_rowNum].J2_y =angleArray[1];\n    storeArray[cover_rowNum].J3_z =angleArray[2];\n    storeArray[cover_rowNum].J4_Rx =angleArray[3];\n    storeArray[cover_rowNum].J5_Ry =angleArray[4];\n    storeArray[cover_rowNum].J6_Rz =angleArray[5];\n    \n\n    storeArray[cover_rowNum+1] = \n    {\n        J1_x :poseArray[0],\n        J2_y :poseArray[1],\n        J3_z :poseArray[2],\n        J4_Rx :poseArray[3],\n        J5_Ry :poseArray[4],\n        J6_Rz :poseArray[5],\n    }\n}\n\n\nflow.set(\"storeArray\", storeArray);\nflow.set(\"clearArray\", clearArray);\nflow.set(\"counter\",counter);\n\n//flow.set(\"optionsArr\", optionsArr);\n//msg.options = optionsArr; \nmsg.payload = storeArray;\nreturn msg",
         "outputs": 1,
@@ -2839,19 +2802,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
-        "y": 2060,
+        "x": 1250,
+        "y": 2100,
         "wires": [
             [
-                "b34f589b647a4de5",
-                "e7ee87cb9e38c25c"
+                "9d817428f880cc9f",
+                "746284638db4db6a"
             ]
         ]
     },
     {
-        "id": "b34f589b647a4de5",
+        "id": "9d817428f880cc9f",
         "type": "debug",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -2860,14 +2823,14 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 950,
-        "y": 2000,
+        "x": 1410,
+        "y": 2040,
         "wires": []
     },
     {
-        "id": "c58c5e41ffb7a758",
+        "id": "0912111166802f77",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "var storeArray = flow.get(\"storeArray\") || [];\nvar clearArray = flow.get(\"clearArray\") || \"\"; \nvar counter = flow.get(\"counter\") || 0;\nif (msg.topic == \"reset\")\n{\n    storeArray = [\n        {\n            Points :\"\",\n            J1_x :\"\",\n            J2_y : \"\",\n            J3_z : \"\",\n            J4_Rx : \"\",\n            J5_Ry : \"\",\n            J6_Rz : \"\"\n        },\n        {\n            J1_x :\"\",\n            J2_y : \"\",\n            J3_z : \"\",\n            J4_Rx : \"\",\n            J5_Ry : \"\",\n            J6_Rz : \"\"\n        }\n    ];\n    clearArray = 1;\n    counter = 0;\n}\n\nflow.set(\"storeArray\", storeArray);\nflow.set(\"clearArray\", clearArray);\nflow.set(\"counter\", counter);\nmsg.payload = storeArray;\nreturn msg",
         "outputs": 1,
@@ -2875,20 +2838,20 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
-        "y": 2100,
+        "x": 1250,
+        "y": 2140,
         "wires": [
             [
-                "e7ee87cb9e38c25c"
+                "746284638db4db6a"
             ]
         ]
     },
     {
-        "id": "46fae62ccb1b7f3e",
+        "id": "f979deed9c26bf52",
         "type": "ui_button",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
-        "group": "c60bcee9cc384a91",
+        "group": "30f7f32d0cece33f",
         "order": 2,
         "width": 9,
         "height": 1,
@@ -2903,18 +2866,18 @@
         "payloadType": "str",
         "topic": "reset",
         "topicType": "str",
-        "x": 130,
-        "y": 2240,
+        "x": 590,
+        "y": 2280,
         "wires": [
             [
-                "c58c5e41ffb7a758"
+                "0912111166802f77"
             ]
         ]
     },
     {
-        "id": "f5a30dea20d03cd7",
+        "id": "d73a0de430bb4592",
         "type": "mqtt out",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "topic": "topic/CoreFunc",
         "qos": "",
@@ -2925,15 +2888,15 @@
         "correl": "",
         "expiry": "",
         "broker": "8f6f8c09749e6d95",
-        "x": 780,
-        "y": 2720,
+        "x": 1240,
+        "y": 2900,
         "wires": []
     },
     {
-        "id": "e7ee87cb9e38c25c",
+        "id": "746284638db4db6a",
         "type": "ui_table",
-        "z": "aafced5826385ea7",
-        "group": "c60bcee9cc384a91",
+        "z": "4e7469d429d4695f",
+        "group": "30f7f32d0cece33f",
         "name": "",
         "order": 3,
         "width": 9,
@@ -2941,19 +2904,19 @@
         "columns": [],
         "outputs": 1,
         "cts": true,
-        "x": 1110,
-        "y": 2080,
+        "x": 1570,
+        "y": 2120,
         "wires": [
             [
-                "993d612165070fd3",
-                "0f06d024fa0a6d61"
+                "9a26f0afc11bd6bf",
+                "b82ca1d52cc868e0"
             ]
         ]
     },
     {
-        "id": "31257e6981ddde31",
+        "id": "0766dd6e104a69c1",
         "type": "inject",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "props": [
             {
@@ -2971,18 +2934,18 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 970,
-        "y": 2260,
+        "x": 1430,
+        "y": 2300,
         "wires": [
             [
-                "0f06d024fa0a6d61"
+                "b82ca1d52cc868e0"
             ]
         ]
     },
     {
-        "id": "0f06d024fa0a6d61",
+        "id": "b82ca1d52cc868e0",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "var storeArray = flow.get(\"storeArray\") || [];\n\nlet rowNum = 0;\nrowNum = msg.row;\n\nif((rowNum+1)%2 == 0)\n{\n    rowNum = rowNum -1;\n}\n\n\nlet point = [storeArray[rowNum].J1_x, storeArray[rowNum].J2_y, storeArray[rowNum].J3_z, storeArray[rowNum].J4_Rx, storeArray[rowNum].J5_Ry, storeArray[rowNum].J6_Rz]\n\npointStr = point.toString(point)\n\nmsg.payload = pointStr; \n\nreturn msg;",
         "outputs": 1,
@@ -2990,19 +2953,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1180,
-        "y": 2220,
+        "x": 1640,
+        "y": 2260,
         "wires": [
             [
-                "6b6c66d41901415a",
-                "08dbe0a6d62ebb51"
+                "96e3a9da1b938684",
+                "e423628b57e6eb37"
             ]
         ]
     },
     {
-        "id": "6b6c66d41901415a",
+        "id": "96e3a9da1b938684",
         "type": "mqtt out",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "topic": "topic/runTo",
         "qos": "",
@@ -3013,14 +2976,14 @@
         "correl": "",
         "expiry": "",
         "broker": "62a9400db3990b17",
-        "x": 1410,
-        "y": 2220,
+        "x": 1870,
+        "y": 2260,
         "wires": []
     },
     {
-        "id": "08dbe0a6d62ebb51",
+        "id": "e423628b57e6eb37",
         "type": "debug",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -3029,15 +2992,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1410,
-        "y": 2280,
+        "x": 1870,
+        "y": 2320,
         "wires": []
     },
     {
-        "id": "7339321cda571e09",
+        "id": "a05a7be5bc680d4c",
         "type": "ui_text",
-        "z": "aafced5826385ea7",
-        "group": "cfab6dd37ac3a75c",
+        "z": "4e7469d429d4695f",
+        "group": "78de5537cef60a1e",
         "order": 3,
         "width": 0,
         "height": 0,
@@ -3046,14 +3009,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1780,
-        "y": 2100,
+        "x": 2240,
+        "y": 2140,
         "wires": []
     },
     {
-        "id": "993d612165070fd3",
+        "id": "9a26f0afc11bd6bf",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "let rowNum = 0;\nrowNum = msg.row;\nif (rowNum%2 != 0)\n{\n    rowNum = (rowNum-1)/2 +1;\n}\nelse\n{\n    rowNum = rowNum/2 + 1;\n}\n\n\n\nmsg.payload = rowNum; \nreturn msg;",
         "outputs": 1,
@@ -3061,21 +3024,21 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1400,
-        "y": 2080,
+        "x": 1860,
+        "y": 2120,
         "wires": [
             [
-                "7339321cda571e09",
-                "c06ac841e47a7923",
-                "018c5fbd7bfdc029",
-                "a437b29469d01c7d"
+                "a05a7be5bc680d4c",
+                "62a188112e45d1fa",
+                "a2fb624d37da3c31",
+                "8e18f1b2e0646247"
             ]
         ]
     },
     {
-        "id": "52db9395690bc27e",
+        "id": "27224f19a062cff5",
         "type": "mqtt in",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "topic": "topic/break",
         "qos": "2",
@@ -3085,21 +3048,21 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 160,
-        "y": 1680,
+        "x": 140,
+        "y": 1740,
         "wires": [
             [
-                "f889d7eaae24dfca",
-                "7de1b6dc82cdbc90",
-                "8583b58c49d011cc",
-                "0a32818ae1e6bd90"
+                "1905a7916ce635a0",
+                "d489597680fdcfd5",
+                "8ff604c1c944fbbe",
+                "59246f348cad9c5e"
             ]
         ]
     },
     {
-        "id": "f889d7eaae24dfca",
+        "id": "1905a7916ce635a0",
         "type": "mqtt out",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "topic": "topic/Break",
         "qos": "",
@@ -3110,14 +3073,14 @@
         "correl": "",
         "expiry": "",
         "broker": "407a01e4.6b637",
-        "x": 530,
-        "y": 1680,
+        "x": 510,
+        "y": 1740,
         "wires": []
     },
     {
-        "id": "7de1b6dc82cdbc90",
+        "id": "d489597680fdcfd5",
         "type": "debug",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -3126,15 +3089,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 1760,
+        "x": 520,
+        "y": 1820,
         "wires": []
     },
     {
-        "id": "8583b58c49d011cc",
+        "id": "8ff604c1c944fbbe",
         "type": "ui_text",
-        "z": "aafced5826385ea7",
-        "group": "cfab6dd37ac3a75c",
+        "z": "4e7469d429d4695f",
+        "group": "78de5537cef60a1e",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -3143,14 +3106,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 530,
-        "y": 1820,
+        "x": 510,
+        "y": 1880,
         "wires": []
     },
     {
-        "id": "0a32818ae1e6bd90",
+        "id": "59246f348cad9c5e",
         "type": "delay",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "pauseType": "delay",
         "timeout": "2",
@@ -3164,18 +3127,18 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 180,
-        "y": 1880,
+        "x": 160,
+        "y": 1940,
         "wires": [
             [
-                "175424f99db223cb"
+                "3159758f536de58f"
             ]
         ]
     },
     {
-        "id": "175424f99db223cb",
+        "id": "3159758f536de58f",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "msg.payload = \"\"\nreturn msg;",
         "outputs": 1,
@@ -3183,28 +3146,28 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 1880,
+        "x": 340,
+        "y": 1940,
         "wires": [
             [
-                "8583b58c49d011cc"
+                "8ff604c1c944fbbe"
             ]
         ]
     },
     {
-        "id": "43792920458c10f8",
+        "id": "98fcac764b3b2c43",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Save Teach Points",
         "info": "",
-        "x": 1130,
-        "y": 2040,
+        "x": 1630,
+        "y": 2060,
         "wires": []
     },
     {
-        "id": "db09176e96a1b22a",
+        "id": "558f5fcfbfdc7dd6",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "if (msg)\n{\n    msg.payload = true\n}\nreturn msg;",
         "outputs": 1,
@@ -3212,18 +3175,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 700,
+        "x": 780,
+        "y": 800,
         "wires": [
             [
-                "526e1f59848cf408"
+                "b196faf334768013"
             ]
         ]
     },
     {
-        "id": "67e37b6ca58ecfc7",
+        "id": "e706cc41e78c3866",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "msg.payload = [\n    {\n        \"Type\": \"Joint\", \n        \"J1/X\": \"\",\n        \"J2/Y\": \"\",\n        \"J3/Z\": \"\",\n        \"J4/Rx\": \"\",\n        \"J5/Ry\": \"\",\n        \"J6/Rz\": \"\"\n    },\n    {\n        \"Type\": \"Coord\",\n        \"J1/X\": \"\",\n        \"J2/Y\": \"\",\n        \"J3/Z\": \"\",\n        \"J4/Rx\": \"\",\n        \"J5/Ry\": \"\",\n        \"J6/Rz\": \"\"\n    }\n    ]\n\nreturn msg;\n\n    \n",
         "outputs": 1,
@@ -3231,18 +3194,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1020,
-        "y": 1820,
+        "x": 1480,
+        "y": 1860,
         "wires": [
             [
-                "e7ee87cb9e38c25c"
+                "746284638db4db6a"
             ]
         ]
     },
     {
-        "id": "f8bc24599ee3e386",
+        "id": "da33c4c4b92b96c2",
         "type": "inject",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "props": [
             {
@@ -3259,19 +3222,19 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 850,
-        "y": 1680,
+        "x": 1310,
+        "y": 1720,
         "wires": [
             [
-                "67e37b6ca58ecfc7",
-                "672a13021d69d20b"
+                "e706cc41e78c3866",
+                "fc1a9285779f26ed"
             ]
         ]
     },
     {
-        "id": "672a13021d69d20b",
+        "id": "fc1a9285779f26ed",
         "type": "template",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "field": "payload",
         "fieldType": "msg",
@@ -3279,19 +3242,19 @@
         "syntax": "mustache",
         "template": "None",
         "output": "str",
-        "x": 1380,
-        "y": 1920,
+        "x": 1840,
+        "y": 1960,
         "wires": [
             [
-                "7339321cda571e09"
+                "a05a7be5bc680d4c"
             ]
         ]
     },
     {
-        "id": "abd661319b54884b",
+        "id": "8d09f358.cc5c4",
         "type": "ui_template",
-        "z": "aafced5826385ea7",
-        "group": "cfab6dd37ac3a75c",
+        "z": "4e7469d429d4695f",
+        "group": "78de5537cef60a1e",
         "name": "MoveTo",
         "order": 4,
         "width": 9,
@@ -3302,19 +3265,19 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 140,
-        "y": 2440,
+        "x": 600,
+        "y": 2480,
         "wires": [
             [
-                "ad5452024490cb33",
-                "478b5dd4d1c02e41"
+                "adf794aefb4f79ad",
+                "e58d405d84fdd30e"
             ]
         ]
     },
     {
-        "id": "ad5452024490cb33",
+        "id": "adf794aefb4f79ad",
         "type": "debug",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -3323,14 +3286,14 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 450,
-        "y": 2420,
+        "x": 910,
+        "y": 2460,
         "wires": []
     },
     {
-        "id": "478b5dd4d1c02e41",
+        "id": "e58d405d84fdd30e",
         "type": "change",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "rules": [
             {
@@ -3346,19 +3309,19 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 350,
-        "y": 2340,
+        "x": 810,
+        "y": 2380,
         "wires": [
             [
-                "1b8a290294339ced"
+                "7dcd791f6d79a32a"
             ]
         ]
     },
     {
-        "id": "9d85b83f07a6b8f9",
+        "id": "b688b33710823791",
         "type": "ui_template",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "name": "1.1",
         "order": 3,
         "width": 2,
@@ -3369,20 +3332,20 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 2010,
-        "y": 380,
+        "x": 2470,
+        "y": 420,
         "wires": [
             [
-                "bb1646c6ebe0049a",
-                "bbdf0c22e78300b2"
+                "20fe28e1356499aa",
+                "3e53d7343bc75e84"
             ]
         ]
     },
     {
-        "id": "a6b9c3fece967f82",
+        "id": "bf4474fadc9a5d58",
         "type": "ui_template",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "name": "1.2",
         "order": 5,
         "width": 2,
@@ -3393,20 +3356,20 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 2010,
-        "y": 600,
+        "x": 2470,
+        "y": 640,
         "wires": [
             [
-                "55b41a578a07ce54",
-                "9ae4a5015d99a2d5"
+                "e17dfdb568df02f1",
+                "c2ca6c04c89a8927"
             ]
         ]
     },
     {
-        "id": "cd1a186a15deae18",
+        "id": "7d3eb4d9624f4683",
         "type": "ui_template",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "name": "2.1",
         "order": 7,
         "width": 2,
@@ -3417,20 +3380,20 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 2010,
-        "y": 840,
+        "x": 2470,
+        "y": 880,
         "wires": [
             [
-                "f3d4d5011b00e24c",
-                "ce7f221ff1733f8e"
+                "93b4fc0eaf7b42fc",
+                "fb87fbed64fd88f8"
             ]
         ]
     },
     {
-        "id": "bfcc3c1e68305a07",
+        "id": "0b45a4efd28c6302",
         "type": "ui_template",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "name": "2.2",
         "order": 9,
         "width": 2,
@@ -3441,20 +3404,20 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 2010,
-        "y": 1080,
+        "x": 2470,
+        "y": 1120,
         "wires": [
             [
-                "8c370173d4a1762d",
-                "7ddfbef3ce7f143a"
+                "1b2a72c39ebf0bab",
+                "15516d5ee856409e"
             ]
         ]
     },
     {
-        "id": "66bab589694255b9",
+        "id": "c9964b3a43d4741f",
         "type": "ui_template",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "name": "3.1",
         "order": 11,
         "width": 2,
@@ -3465,20 +3428,20 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 2010,
-        "y": 1320,
+        "x": 2470,
+        "y": 1360,
         "wires": [
             [
-                "19e60b74be76edc8",
-                "d7a4229b20e9ab5b"
+                "feaa894e4ed184d4",
+                "1061c0fa46e3bfa9"
             ]
         ]
     },
     {
-        "id": "b53e84e4e5f77b59",
+        "id": "4ab4c86f2f11d767",
         "type": "ui_template",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "name": "3.2",
         "order": 13,
         "width": 2,
@@ -3489,20 +3452,20 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 2010,
-        "y": 1560,
+        "x": 2470,
+        "y": 1600,
         "wires": [
             [
-                "caa7b5f95c561887",
-                "8ef7165610191daf"
+                "619a8131b641673a",
+                "f252a683af3b7e3d"
             ]
         ]
     },
     {
-        "id": "5368ed1b6bbce4eb",
+        "id": "adbb40c5e4f0d85d",
         "type": "ui_template",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "name": "4.1",
         "order": 15,
         "width": 2,
@@ -3513,20 +3476,20 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 2010,
-        "y": 1820,
+        "x": 2470,
+        "y": 1860,
         "wires": [
             [
-                "09514bdc651f7de4",
-                "fbf915461480cc23"
+                "fa8b64d5ddd20639",
+                "bf2a6d514fc680ec"
             ]
         ]
     },
     {
-        "id": "c67962c66140defa",
+        "id": "c5f3a99a58ed65e8",
         "type": "ui_template",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "name": "4.2",
         "order": 17,
         "width": 2,
@@ -3537,20 +3500,20 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 2010,
-        "y": 2040,
+        "x": 2470,
+        "y": 2080,
         "wires": [
             [
-                "6191b0acb732185d",
-                "bcb384155769af98"
+                "c8d5756eb66e4f81",
+                "fb5345c7b167abf0"
             ]
         ]
     },
     {
-        "id": "6af7199d05bb8849",
+        "id": "3a1d71fa9e8fa321",
         "type": "ui_template",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "name": "5.1",
         "order": 19,
         "width": 2,
@@ -3561,20 +3524,20 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 2010,
-        "y": 2280,
+        "x": 2470,
+        "y": 2320,
         "wires": [
             [
-                "7cd131bc44975c28",
-                "a81df610d5f05557"
+                "2692b6a7365c8b2e",
+                "8811d2096f800b8f"
             ]
         ]
     },
     {
-        "id": "b955ad7bd3d03f03",
+        "id": "3c58754ee2b21f98",
         "type": "ui_template",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "name": "5.2",
         "order": 21,
         "width": 2,
@@ -3585,20 +3548,20 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 2010,
-        "y": 2520,
+        "x": 2470,
+        "y": 2560,
         "wires": [
             [
-                "4e4c9f9c10bafa21",
-                "bbc7032c35d3a0ce"
+                "f4d78ad9a0468510",
+                "efde2be90e7c58ce"
             ]
         ]
     },
     {
-        "id": "288cf2ba403c152b",
+        "id": "d6800541026fb13e",
         "type": "ui_template",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "name": "6.1",
         "order": 23,
         "width": 2,
@@ -3609,20 +3572,20 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 2010,
-        "y": 2760,
+        "x": 2470,
+        "y": 2800,
         "wires": [
             [
-                "06e4bbb9c02c6721",
-                "d5af92f10b3fc30c"
+                "145eaf6ac80a5156",
+                "5bfb40ad8478c21d"
             ]
         ]
     },
     {
-        "id": "dd6a2945e57872de",
+        "id": "e4acd8d9c38a39d4",
         "type": "ui_template",
-        "z": "aafced5826385ea7",
-        "group": "d9fcd9fe70ec6c0d",
+        "z": "4e7469d429d4695f",
+        "group": "837c7d8cc0f20880",
         "name": "6.2",
         "order": 25,
         "width": 2,
@@ -3633,23 +3596,23 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 2010,
-        "y": 3000,
+        "x": 2470,
+        "y": 3040,
         "wires": [
             [
-                "8da09f841c98dac5",
-                "077759363bf61761"
+                "50da25188c8b7a08",
+                "df637d0bb1ffb569"
             ]
         ]
     },
     {
-        "id": "ea08e5d911c88f60",
+        "id": "e7ade294c7797aa5",
         "type": "ui_switch",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "label": "Enable Robot",
         "tooltip": "",
-        "group": "bdf59e834372100b",
+        "group": "51ba54fdc5fc3b0d",
         "order": 4,
         "width": 0,
         "height": 0,
@@ -3668,20 +3631,20 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 500,
-        "y": 2720,
+        "x": 960,
+        "y": 2900,
         "wires": [
             [
-                "f5a30dea20d03cd7"
+                "d73a0de430bb4592"
             ]
         ]
     },
     {
-        "id": "3c665189aa9034da",
+        "id": "182c6c36a1d6d36e",
         "type": "ui_button",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
-        "group": "bdf59e834372100b",
+        "group": "51ba54fdc5fc3b0d",
         "order": 6,
         "width": 0,
         "height": 0,
@@ -3696,20 +3659,20 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 510,
-        "y": 2780,
+        "x": 970,
+        "y": 2960,
         "wires": [
             [
-                "f5a30dea20d03cd7"
+                "d73a0de430bb4592"
             ]
         ]
     },
     {
-        "id": "51230c56760614d6",
+        "id": "ccd37c6cd0b107c0",
         "type": "ui_button",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
-        "group": "cfab6dd37ac3a75c",
+        "group": "78de5537cef60a1e",
         "order": 8,
         "width": 4,
         "height": 1,
@@ -3724,20 +3687,20 @@
         "payloadType": "str",
         "topic": "deletePoint",
         "topicType": "str",
-        "x": 110,
-        "y": 2160,
+        "x": 570,
+        "y": 2200,
         "wires": [
             [
-                "a9ca1e05ecd355da"
+                "9ca27d8c476b5661"
             ]
         ]
     },
     {
-        "id": "5f40dea0247e4683",
+        "id": "0e5d7b92ccf06550",
         "type": "ui_button",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
-        "group": "cfab6dd37ac3a75c",
+        "group": "78de5537cef60a1e",
         "order": 10,
         "width": 4,
         "height": 1,
@@ -3752,22 +3715,22 @@
         "payloadType": "bool",
         "topic": "cover",
         "topicType": "str",
-        "x": 130,
-        "y": 2120,
+        "x": 590,
+        "y": 2160,
         "wires": [
             [
-                "a9ca1e05ecd355da"
+                "9ca27d8c476b5661"
             ]
         ]
     },
     {
-        "id": "a437b29469d01c7d",
+        "id": "8e18f1b2e0646247",
         "type": "ui_text_input",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "label": "Delete:",
         "tooltip": "",
-        "group": "cfab6dd37ac3a75c",
+        "group": "78de5537cef60a1e",
         "order": 5,
         "width": 4,
         "height": 1,
@@ -3778,16 +3741,16 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 1760,
-        "y": 2040,
+        "x": 2220,
+        "y": 2080,
         "wires": [
             []
         ]
     },
     {
-        "id": "c06ac841e47a7923",
+        "id": "62a188112e45d1fa",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "var storeArray = flow.get(\"storeArray\") || [];\nvar delete_rowNum = global.get(\"delete_rowNum\") || 0;\nvar cover_rowNum = global.get(\"cover_rowNum\") || 0;\n\nvar tablerowNum = 0; \ntablerowNum = msg.payload;\ndelete_rowNum = tablerowNum*2 - 2;\ncover_rowNum = tablerowNum*2 - 2;\n\nflow.set(\"storeArray\", storeArray);\nglobal.set(\"delete_rowNum\", delete_rowNum);\nglobal.set(\"cover_rowNum\", cover_rowNum);\n\nreturn msg",
         "outputs": 1,
@@ -3795,20 +3758,20 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1740,
-        "y": 1880,
+        "x": 2200,
+        "y": 1920,
         "wires": [
             []
         ]
     },
     {
-        "id": "018c5fbd7bfdc029",
+        "id": "a2fb624d37da3c31",
         "type": "ui_text_input",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "label": "Cover:",
         "tooltip": "",
-        "group": "cfab6dd37ac3a75c",
+        "group": "78de5537cef60a1e",
         "order": 7,
         "width": 4,
         "height": 1,
@@ -3819,16 +3782,16 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 1750,
-        "y": 1980,
+        "x": 2210,
+        "y": 2020,
         "wires": [
             []
         ]
     },
     {
-        "id": "db48fbca10af4ce4",
+        "id": "82e7644c0961e186",
         "type": "template",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "field": "payload",
         "fieldType": "msg",
@@ -3836,18 +3799,18 @@
         "syntax": "mustache",
         "template": "Run",
         "output": "str",
-        "x": 440,
-        "y": 1260,
+        "x": 700,
+        "y": 1300,
         "wires": [
             [
-                "6c154092498ef314"
+                "998f1d2f210054ee"
             ]
         ]
     },
     {
-        "id": "6c154092498ef314",
+        "id": "998f1d2f210054ee",
         "type": "change",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "rules": [
             {
@@ -3863,18 +3826,18 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1200,
-        "y": 1140,
+        "x": 1660,
+        "y": 1180,
         "wires": [
             [
-                "113d91827b8d9784"
+                "8dde986e89f4c8bc"
             ]
         ]
     },
     {
-        "id": "3168f431b87069ff",
+        "id": "c9736b3b2484e585",
         "type": "mqtt in",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "topic": "topic/CoreFunc",
         "qos": "2",
@@ -3884,18 +3847,18 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 780,
-        "y": 2660,
+        "x": 1240,
+        "y": 2840,
         "wires": [
             [
-                "3d2961a99ea99dca"
+                "a1168f9a24b938dc"
             ]
         ]
     },
     {
-        "id": "3d2961a99ea99dca",
+        "id": "a1168f9a24b938dc",
         "type": "debug",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -3904,14 +3867,14 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 970,
-        "y": 2720,
+        "x": 1430,
+        "y": 2900,
         "wires": []
     },
     {
-        "id": "ba6aaea2f0e2d56d",
+        "id": "e2942a74a88ca71d",
         "type": "debug",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -3920,43 +3883,43 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 300,
-        "y": 2800,
+        "x": 760,
+        "y": 2980,
         "wires": []
     },
     {
-        "id": "113d91827b8d9784",
+        "id": "8dde986e89f4c8bc",
         "type": "link out",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "mode": "link",
         "links": [
-            "b4f033732ef29986"
+            "6908084d5dd513de"
         ],
-        "x": 1355,
-        "y": 1140,
+        "x": 1815,
+        "y": 1180,
         "wires": []
     },
     {
-        "id": "b4f033732ef29986",
+        "id": "6908084d5dd513de",
         "type": "link in",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "links": [
-            "113d91827b8d9784"
+            "8dde986e89f4c8bc"
         ],
-        "x": 95,
-        "y": 2640,
+        "x": 555,
+        "y": 2820,
         "wires": [
             [
-                "be8928d08f7696e7"
+                "75efcb8ae151971e"
             ]
         ]
     },
     {
-        "id": "1b8a290294339ced",
+        "id": "7dcd791f6d79a32a",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "Status = global.get(\"MoveTo\");\nif (Status == \"Start\")\n{\n    msg.payload = \"GO\";\n}\nelse if (Status == \"Stop\")\n{\n    msg.payload = \"NOGO\";\n}\nreturn msg;",
         "outputs": 1,
@@ -3964,18 +3927,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 600,
-        "y": 2340,
+        "x": 1060,
+        "y": 2380,
         "wires": [
             [
-                "802572300bd7fd49"
+                "d99cc5c511aaea8d"
             ]
         ]
     },
     {
-        "id": "802572300bd7fd49",
+        "id": "d99cc5c511aaea8d",
         "type": "mqtt out",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "topic": "topic/TPMove",
         "qos": "",
@@ -3986,14 +3949,14 @@
         "correl": "",
         "expiry": "",
         "broker": "8f6f8c09749e6d95",
-        "x": 820,
-        "y": 2340,
+        "x": 1280,
+        "y": 2380,
         "wires": []
     },
     {
-        "id": "9185bbae950954d1",
+        "id": "48044f19ca332e37",
         "type": "mqtt in",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "topic": "topic/TPMove",
         "qos": "2",
@@ -4003,34 +3966,34 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 810,
-        "y": 2400,
+        "x": 1270,
+        "y": 2440,
         "wires": [
             [
-                "4b121c5aa27a9ad7"
+                "e90f9da0a7978b91"
             ]
         ]
     },
     {
-        "id": "4b121c5aa27a9ad7",
+        "id": "e90f9da0a7978b91",
         "type": "debug",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1010,
-        "y": 2400,
+        "x": 1470,
+        "y": 2440,
         "wires": []
     },
     {
-        "id": "be8928d08f7696e7",
+        "id": "75efcb8ae151971e",
         "type": "function",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "",
         "func": "Status = global.get(\"Lock\")\nif (Status == \"Run\")\n{\n    msg.payload = \"Enable\"\n}\nelse if (Status == \"Terminate\")\n{\n    msg.payload = \"Disable\"\n}\nreturn msg;",
         "outputs": 1,
@@ -4038,104 +4001,60 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 140,
-        "y": 2720,
+        "x": 600,
+        "y": 2900,
         "wires": [
             [
-                "ba6aaea2f0e2d56d",
-                "ea08e5d911c88f60"
+                "e2942a74a88ca71d",
+                "e7ade294c7797aa5"
             ]
         ]
     },
     {
-        "id": "b928907b34609688",
+        "id": "683701d577835ac4",
         "type": "comment",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "Lock/unlock joints + clear error",
-        "info": "",
-        "x": 300,
-        "y": 2600,
+        "info": "Allow users to lock or unlock the joints via the enable robot button as well as clear errors that show up",
+        "x": 660,
+        "y": 2760,
         "wires": []
     },
     {
-        "id": "093b47cc3ab2507d",
-        "type": "mqtt out",
-        "z": "aafced5826385ea7",
-        "name": "",
-        "topic": "topic/newPoint",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "407a01e4.6b637",
-        "x": 1420,
-        "y": 2160,
+        "id": "2fb6ab098d7ad4f5",
+        "type": "comment",
+        "z": "4e7469d429d4695f",
+        "name": "Break",
+        "info": "All this does is send MQTT data to topic/Break to break the code. It isn't really necessary \n",
+        "x": 130,
+        "y": 1700,
         "wires": []
     },
     {
-        "id": "ec25d3f5102a9a70",
-        "type": "debug",
-        "z": "aafced5826385ea7",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1430,
-        "y": 2120,
-        "wires": []
-    },
-    {
-        "id": "d63ba291e11015b4",
-        "type": "function",
-        "z": "aafced5826385ea7",
-        "name": "",
-        "func": "let point = [msg.payload.J1_x, msg.payload.J2_y, msg.payload.J3_z, msg.payload.J4_Rx, msg.payload.J5_Ry, msg.payload.J6_Rz]\n\npointStr = point.toString(point)\n\nmsg.payload = pointStr; \n\nreturn msg;\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1220,
-        "y": 2160,
-        "wires": [
-            [
-                "093b47cc3ab2507d",
-                "ec25d3f5102a9a70"
-            ]
-        ]
-    },
-    {
-        "id": "6603aee258da14a6",
+        "id": "18732faebd377fed",
         "type": "ui_spacer",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "spacer",
-        "group": "cfab6dd37ac3a75c",
+        "group": "78de5537cef60a1e",
         "order": 6,
         "width": 1,
         "height": 1
     },
     {
-        "id": "3dca0f32eed3c364",
+        "id": "bbadff2670a6b06b",
         "type": "ui_spacer",
-        "z": "aafced5826385ea7",
+        "z": "4e7469d429d4695f",
         "name": "spacer",
-        "group": "cfab6dd37ac3a75c",
+        "group": "78de5537cef60a1e",
         "order": 9,
         "width": 1,
         "height": 1
     },
     {
-        "id": "9513f97c8f62a13b",
+        "id": "f29b12ea02f013df",
         "type": "ui_group",
         "name": "Modbus Commands",
-        "tab": "eb5697cbd559ae08",
+        "tab": "8d1d63613d63fbc9",
         "order": 3,
         "disp": true,
         "width": "6",
@@ -4169,10 +4088,10 @@
         "parallelUnitIdsAllowed": true
     },
     {
-        "id": "0f421e103d692423",
+        "id": "2938c6b63c0dcba1",
         "type": "ui_group",
         "name": "Run Python",
-        "tab": "eb5697cbd559ae08",
+        "tab": "8d1d63613d63fbc9",
         "order": 2,
         "disp": true,
         "width": "6",
@@ -4206,10 +4125,10 @@
         "sessionExpiry": ""
     },
     {
-        "id": "bdf59e834372100b",
+        "id": "51ba54fdc5fc3b0d",
         "type": "ui_group",
         "name": "App Commands",
-        "tab": "eb5697cbd559ae08",
+        "tab": "8d1d63613d63fbc9",
         "order": 3,
         "disp": true,
         "width": "6",
@@ -4217,10 +4136,10 @@
         "className": ""
     },
     {
-        "id": "d9fcd9fe70ec6c0d",
+        "id": "837c7d8cc0f20880",
         "type": "ui_group",
         "name": "Jog",
-        "tab": "50c0c6fec91170a1",
+        "tab": "f483d2e443e11978",
         "order": 3,
         "disp": true,
         "width": "8",
@@ -4228,10 +4147,10 @@
         "className": ""
     },
     {
-        "id": "212f7c3299514e6d",
+        "id": "5a3cf28c6aa97183",
         "type": "ui_group",
         "name": "Position Data",
-        "tab": "50c0c6fec91170a1",
+        "tab": "f483d2e443e11978",
         "order": 2,
         "disp": true,
         "width": "12",
@@ -4239,7 +4158,7 @@
         "className": ""
     },
     {
-        "id": "b5228ecf2ba8b16a",
+        "id": "85a361c9db51db9d",
         "type": "mqtt-broker",
         "name": "",
         "broker": "localhost",
@@ -4264,10 +4183,10 @@
         "sessionExpiry": ""
     },
     {
-        "id": "cfab6dd37ac3a75c",
+        "id": "78de5537cef60a1e",
         "type": "ui_group",
         "name": "Current Position",
-        "tab": "911b7cb46c0bd7aa",
+        "tab": "058b89818aae0a2d",
         "order": 1,
         "disp": true,
         "width": "9",
@@ -4275,10 +4194,10 @@
         "className": ""
     },
     {
-        "id": "c60bcee9cc384a91",
+        "id": "30f7f32d0cece33f",
         "type": "ui_group",
         "name": "Teach Points",
-        "tab": "911b7cb46c0bd7aa",
+        "tab": "058b89818aae0a2d",
         "order": 2,
         "disp": true,
         "width": "9",
@@ -4336,7 +4255,7 @@
         "sessionExpiry": ""
     },
     {
-        "id": "eb5697cbd559ae08",
+        "id": "8d1d63613d63fbc9",
         "type": "ui_tab",
         "name": "Dobot_CR5 Control",
         "icon": "mi-precision_manufacturing",
@@ -4345,7 +4264,7 @@
         "hidden": false
     },
     {
-        "id": "50c0c6fec91170a1",
+        "id": "f483d2e443e11978",
         "type": "ui_tab",
         "name": "Jog",
         "icon": "mi-directions_walk",
@@ -4354,7 +4273,7 @@
         "hidden": false
     },
     {
-        "id": "911b7cb46c0bd7aa",
+        "id": "058b89818aae0a2d",
         "type": "ui_tab",
         "name": "Teach Points",
         "icon": "mi-assignment_ind",
