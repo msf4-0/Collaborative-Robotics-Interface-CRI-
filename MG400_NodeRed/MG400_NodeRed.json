@@ -1,0 +1,4120 @@
+[
+    {
+        "id": "f8d44828fc32afc1",
+        "type": "tab",
+        "label": "DobotMG400Controls",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e064b60110e16de1",
+        "type": "inject",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "CLEAR",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 140,
+        "wires": [
+            [
+                "6a49764741d89a0b"
+            ]
+        ]
+    },
+    {
+        "id": "6ff5a10081366db9",
+        "type": "inject",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [
+                "e9299fa402728abe"
+            ]
+        ]
+    },
+    {
+        "id": "c093255e4c3e92e9",
+        "type": "inject",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "Pause",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [
+                "99bb2f05dfa06924"
+            ]
+        ]
+    },
+    {
+        "id": "ab161c685aca1ed1",
+        "type": "inject",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "Continue",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 320,
+        "wires": [
+            [
+                "c6273ec790c2b14c"
+            ]
+        ]
+    },
+    {
+        "id": "38cf9b7a2991af9d",
+        "type": "inject",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "Stop",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 380,
+        "wires": [
+            [
+                "9f4983699b111ded"
+            ]
+        ]
+    },
+    {
+        "id": "d814cd17ec52e0d4",
+        "type": "ui_button",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "",
+        "group": "6a2351abb1784f1b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 220,
+        "wires": [
+            [
+                "e9299fa402728abe"
+            ]
+        ]
+    },
+    {
+        "id": "c277d62612be66f2",
+        "type": "ui_button",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "",
+        "group": "6a2351abb1784f1b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Pause",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 280,
+        "wires": [
+            [
+                "99bb2f05dfa06924"
+            ]
+        ]
+    },
+    {
+        "id": "c4114598b12c2e5b",
+        "type": "ui_button",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "",
+        "group": "6a2351abb1784f1b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Continue",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 580,
+        "y": 340,
+        "wires": [
+            [
+                "c6273ec790c2b14c"
+            ]
+        ]
+    },
+    {
+        "id": "eeb5b70bad77874d",
+        "type": "ui_button",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "",
+        "group": "6a2351abb1784f1b",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Stop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 400,
+        "wires": [
+            [
+                "9f4983699b111ded"
+            ]
+        ]
+    },
+    {
+        "id": "6a49764741d89a0b",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "Clear",
+        "func": "msg.payload = { value:[0,0,0,0],\n'fc': 15,\n'unitid': 1,\n'address': 0,\n'quantity': 4 }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 140,
+        "wires": [
+            [
+                "dc4df9efc4a0e60f"
+            ]
+        ]
+    },
+    {
+        "id": "e9299fa402728abe",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "Start",
+        "func": "msg.payload = { value:[1,0,0,0],\n'fc': 15,\n'unitid': 1,\n'address': 0,\n'quantity': 4 }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 200,
+        "wires": [
+            [
+                "dc4df9efc4a0e60f"
+            ]
+        ]
+    },
+    {
+        "id": "99bb2f05dfa06924",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "Pause",
+        "func": "msg.payload = { value:[0,1,0,0],\n'fc': 15,\n'unitid': 1,\n'address': 0,\n'quantity': 4 }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 260,
+        "wires": [
+            [
+                "dc4df9efc4a0e60f"
+            ]
+        ]
+    },
+    {
+        "id": "c6273ec790c2b14c",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "Continue",
+        "func": "msg.payload = { value:[0,0,1,0],\n'fc': 15,\n'unitid': 1,\n'address': 0,\n'quantity': 4 }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 320,
+        "wires": [
+            [
+                "dc4df9efc4a0e60f"
+            ]
+        ]
+    },
+    {
+        "id": "9f4983699b111ded",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "Stop",
+        "func": "msg.payload = { value:[0,0,0,1],\n'fc': 15,\n'unitid': 1,\n'address': 0,\n'quantity': 4 }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 380,
+        "wires": [
+            [
+                "dc4df9efc4a0e60f"
+            ]
+        ]
+    },
+    {
+        "id": "8ec321650d52a765",
+        "type": "modbus-response",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "",
+        "registerShowMax": 20,
+        "x": 1430,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "dc4df9efc4a0e60f",
+        "type": "modbus-flex-write",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "Dobot Controller",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "server": "63d69422.2169ac",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "x": 1120,
+        "y": 260,
+        "wires": [
+            [
+                "8ec321650d52a765"
+            ],
+            [
+                "8ec321650d52a765"
+            ]
+        ]
+    },
+    {
+        "id": "d4e90fc8db69a963",
+        "type": "exec",
+        "z": "f8d44828fc32afc1",
+        "command": "python",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 390,
+        "y": 940,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "85e3274c7ed9bc86",
+        "type": "ui_text_input",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "label": "File Path + Name",
+        "tooltip": "",
+        "group": "f62a32120828bdd1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 110,
+        "y": 860,
+        "wires": [
+            [
+                "3201c24901e62f89",
+                "a0ffeef8d057e8d9"
+            ]
+        ]
+    },
+    {
+        "id": "84d836fcce0000d8",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "Modbus",
+        "info": "MODBUS commands to trigger the mg400 not yet implemented. \n\nCheck MG400 documentation to configure and implement MODBUS control. ",
+        "x": 170,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "061b02e7319fcd52",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "Jog with Joints/Cartesian",
+        "info": "This flow allows user to jog the MG400 in cartesian or joint angles by sending MQTT data to the python script. ",
+        "x": 2050,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "aa780e8e423f3209",
+        "type": "mqtt in",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/Terminate",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "94b09997d96a666a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 580,
+        "y": 580,
+        "wires": [
+            [
+                "c917c65ce760ebc9"
+            ]
+        ]
+    },
+    {
+        "id": "c917c65ce760ebc9",
+        "type": "debug",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "57d5ddda3d62c6b1",
+        "type": "ui_button",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "group": "79fa11aa3127feea",
+        "order": 1,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Run App",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 1160,
+        "wires": [
+            [
+                "f91d9d495b889987",
+                "5ed33f9f55330daf",
+                "bceba1dbed0a9ea6",
+                "684c6cacfe9d2aac"
+            ]
+        ]
+    },
+    {
+        "id": "3a84c33efafb3ac8",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "Run Python App with Jog & teach point functions",
+        "info": "Runs the python script in the designated filepath. This allows the main app to function\n\nEnsure to put in the filepath of your python script in the dark blue pythonshell node.\n\nEnsure that the backslash is used \"/\" and that the filepath ends with /<name of python file>.py ",
+        "x": 240,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "a4eb8c3bb92989f0",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "Stop App running",
+        "info": "Terminates the python script and all the functions in the script from running through MQTT.",
+        "x": 360,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "5e3158da52c45f77",
+        "type": "ui_button",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "group": "79fa11aa3127feea",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Terminate",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 580,
+        "wires": [
+            [
+                "a3e1670ff4977c40"
+            ]
+        ]
+    },
+    {
+        "id": "a3e1670ff4977c40",
+        "type": "template",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Terminate",
+        "output": "str",
+        "x": 440,
+        "y": 640,
+        "wires": [
+            [
+                "7368406f51687ce3",
+                "60431e17942e027b",
+                "6fb661ca0d1dfbca"
+            ]
+        ]
+    },
+    {
+        "id": "6fb661ca0d1dfbca",
+        "type": "mqtt out",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/Terminate",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "94b09997d96a666a",
+        "x": 740,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "f91d9d495b889987",
+        "type": "pythonshell in",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "pyfile": "",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 340,
+        "y": 1160,
+        "wires": [
+            [
+                "8b3fbe34cae12042"
+            ]
+        ]
+    },
+    {
+        "id": "2c3480625024bf82",
+        "type": "ui_switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "label": "Joint",
+        "tooltip": "Change Cartesian(OFF) Change Joint(ON)",
+        "group": "d6f7e2531ada22b7",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1190,
+        "y": 1540,
+        "wires": [
+            [
+                "0a40ed784358ccb1"
+            ]
+        ]
+    },
+    {
+        "id": "0a40ed784358ccb1",
+        "type": "change",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "JogMode",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1390,
+        "y": 1540,
+        "wires": [
+            [
+                "5d7f12801f10bbea",
+                "0fd67e6de4ba0e5b",
+                "163cb3e2c37e9084",
+                "4cfe07bad9b1d5c7",
+                "0e59ed75b42b0f8a",
+                "0ae17993d4b21023",
+                "8b9d2943b7d8e37f",
+                "cc988d85693d0694"
+            ]
+        ]
+    },
+    {
+        "id": "538ebe918a5fae9b",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "Choose Jog Mode",
+        "info": "The toggle changes the jog mode. \n\nToggling the toggle will change the Button UI Display according to the selected jog mode.\n\nThe user may choose to jog the Dobot in Cartesian Coordinates or in the Joint Angle direction.\n\n",
+        "x": 1210,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "9ca017818207fac6",
+        "type": "mqtt in",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/Angle",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "94b09997d96a666a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 1480,
+        "wires": [
+            [
+                "73b095c681e08c9a",
+                "2a3cd5cf23c4708b"
+            ]
+        ]
+    },
+    {
+        "id": "a9375736c48836e2",
+        "type": "mqtt in",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/Pose",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "94b09997d96a666a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 1620,
+        "wires": [
+            [
+                "d683424f89247091",
+                "3666520b4736618d"
+            ]
+        ]
+    },
+    {
+        "id": "73b095c681e08c9a",
+        "type": "debug",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "d683424f89247091",
+        "type": "debug",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "2a3cd5cf23c4708b",
+        "type": "change",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Angle",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 1540,
+        "wires": [
+            [
+                "ac1ba29551ea7823"
+            ]
+        ]
+    },
+    {
+        "id": "ac1ba29551ea7823",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "Angle = global.get(\"Angle\")\nlet joint = Angle.slice(1,(Angle.length)-1)\nlet myArr1 = joint.split(\",\")\n\nPose = global.get(\"Pose\")\nlet coordinate = Pose.slice(1,(Pose.length)-1)\nlet myArr2 = coordinate.split(\",\")\n\nmsg.payload = [\n    {\n        \"Type\": \"Joint\", \n        \"J1/X\": myArr1[0],\n        \"J2/Y\": myArr1[1],\n        \"J3/Z\": myArr1[2],\n        \"J4/R\": myArr1[3]\n    },\n    {\n        \"Type\": \"Coord\",\n        \"J1/X\": myArr2[0],\n        \"J2/Y\": myArr2[1],\n        \"J3/Z\": myArr2[2],\n        \"J4/R\": myArr2[3]\n\n    }\n    ]\n\nreturn msg;\n\n    \n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 1560,
+        "wires": [
+            [
+                "dbbddd54965477d3"
+            ]
+        ]
+    },
+    {
+        "id": "3666520b4736618d",
+        "type": "change",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Pose",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 1580,
+        "wires": [
+            [
+                "ac1ba29551ea7823"
+            ]
+        ]
+    },
+    {
+        "id": "dbbddd54965477d3",
+        "type": "ui_table",
+        "z": "f8d44828fc32afc1",
+        "group": "d0e6d0881e1e8309",
+        "name": "",
+        "order": 1,
+        "width": 12,
+        "height": 3,
+        "columns": [],
+        "outputs": 1,
+        "cts": true,
+        "x": 810,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6405bda9cdfae7bd",
+        "type": "mqtt in",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/ToggleJog",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "94b09997d96a666a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 3600,
+        "y": 1600,
+        "wires": [
+            [
+                "42a898f00a8e840e"
+            ]
+        ]
+    },
+    {
+        "id": "42a898f00a8e840e",
+        "type": "debug",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3790,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "1592a2c54147d204",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J1+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"X+\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2540,
+        "y": 160,
+        "wires": [
+            [
+                "421faa3e0433e22a"
+            ]
+        ]
+    },
+    {
+        "id": "fa82fa17ae940131",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 240,
+        "wires": [
+            [
+                "1592a2c54147d204"
+            ]
+        ]
+    },
+    {
+        "id": "45f60dfd8df81963",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 340,
+        "wires": [
+            [
+                "cc9ed95a13dbdcca"
+            ]
+        ]
+    },
+    {
+        "id": "cc9ed95a13dbdcca",
+        "type": "template",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "",
+        "output": "str",
+        "x": 3280,
+        "y": 2320,
+        "wires": [
+            [
+                "421faa3e0433e22a"
+            ]
+        ]
+    },
+    {
+        "id": "dbc2d83d19268cd0",
+        "type": "mqtt in",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/Jog",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "94b09997d96a666a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 3580,
+        "y": 1420,
+        "wires": [
+            [
+                "9ae1f78c1f3abe3b"
+            ]
+        ]
+    },
+    {
+        "id": "421faa3e0433e22a",
+        "type": "mqtt out",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/Jog",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "94b09997d96a666a",
+        "x": 3580,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "9ae1f78c1f3abe3b",
+        "type": "debug",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3770,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "a8f4f57c4576c33c",
+        "type": "ui_text",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "1.1",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1770,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "5d7f12801f10bbea",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J1+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"X+\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1620,
+        "y": 1320,
+        "wires": [
+            [
+                "a8f4f57c4576c33c"
+            ]
+        ]
+    },
+    {
+        "id": "200410e2033523f9",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "J1+/X+",
+        "info": "",
+        "x": 2010,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c98206ce5acbdf2a",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J1-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"X-\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2540,
+        "y": 420,
+        "wires": [
+            [
+                "421faa3e0433e22a"
+            ]
+        ]
+    },
+    {
+        "id": "e423c3e995b93267",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 480,
+        "wires": [
+            [
+                "c98206ce5acbdf2a"
+            ]
+        ]
+    },
+    {
+        "id": "aeeb9fa02d737c8f",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 560,
+        "wires": [
+            [
+                "cc9ed95a13dbdcca"
+            ]
+        ]
+    },
+    {
+        "id": "9768547b66b48aa0",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "J1-/X-",
+        "info": "",
+        "x": 2010,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "88c666c64295c9fd",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J2+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Y+\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2540,
+        "y": 640,
+        "wires": [
+            [
+                "421faa3e0433e22a"
+            ]
+        ]
+    },
+    {
+        "id": "541cc6a388cd5c50",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 720,
+        "wires": [
+            [
+                "88c666c64295c9fd"
+            ]
+        ]
+    },
+    {
+        "id": "86a38f2f4aa69a05",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 800,
+        "wires": [
+            [
+                "cc9ed95a13dbdcca"
+            ]
+        ]
+    },
+    {
+        "id": "f98f588933c2df4c",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "J2+/Y+",
+        "info": "",
+        "x": 2010,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "5abc3fa044a85f73",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J2-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Y-\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2540,
+        "y": 880,
+        "wires": [
+            [
+                "421faa3e0433e22a"
+            ]
+        ]
+    },
+    {
+        "id": "e3a67a38eed69908",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 960,
+        "wires": [
+            [
+                "5abc3fa044a85f73"
+            ]
+        ]
+    },
+    {
+        "id": "28d5c7c943cdb33f",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1040,
+        "wires": [
+            [
+                "cc9ed95a13dbdcca"
+            ]
+        ]
+    },
+    {
+        "id": "cc039593b58f1a10",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "J2-/Y-",
+        "info": "",
+        "x": 2010,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "5568afdbd4f0d9b5",
+        "type": "ui_text",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "1.2",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1770,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "0fd67e6de4ba0e5b",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J1-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"X-\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1620,
+        "y": 1360,
+        "wires": [
+            [
+                "5568afdbd4f0d9b5"
+            ]
+        ]
+    },
+    {
+        "id": "eb12a6fd7eed2d5a",
+        "type": "ui_text",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "order": 6,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "2.1",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1770,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "163cb3e2c37e9084",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J2+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Y+\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1620,
+        "y": 1400,
+        "wires": [
+            [
+                "eb12a6fd7eed2d5a"
+            ]
+        ]
+    },
+    {
+        "id": "bbdf012fd24afbfc",
+        "type": "ui_text",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "order": 8,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "2.2",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1770,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "4cfe07bad9b1d5c7",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J2-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Y-\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1620,
+        "y": 1440,
+        "wires": [
+            [
+                "bbdf012fd24afbfc"
+            ]
+        ]
+    },
+    {
+        "id": "bb6d75eec317088d",
+        "type": "inject",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 1190,
+        "y": 1480,
+        "wires": [
+            [
+                "0a40ed784358ccb1",
+                "2c3480625024bf82"
+            ]
+        ]
+    },
+    {
+        "id": "22bb44c1316f3518",
+        "type": "ui_text",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "order": 10,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "3.1",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1770,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "0e59ed75b42b0f8a",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J3+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Z+\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1620,
+        "y": 1480,
+        "wires": [
+            [
+                "22bb44c1316f3518"
+            ]
+        ]
+    },
+    {
+        "id": "d73a9bf1ccd31fc2",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J3+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Z+\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2540,
+        "y": 1120,
+        "wires": [
+            [
+                "421faa3e0433e22a"
+            ]
+        ]
+    },
+    {
+        "id": "25de07041bb0996b",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1200,
+        "wires": [
+            [
+                "d73a9bf1ccd31fc2"
+            ]
+        ]
+    },
+    {
+        "id": "648b3a3f33204f41",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1280,
+        "wires": [
+            [
+                "cc9ed95a13dbdcca"
+            ]
+        ]
+    },
+    {
+        "id": "57c33cf132942209",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "J3+/Z+",
+        "info": "",
+        "x": 2010,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "04b3513c96180fb3",
+        "type": "ui_text",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "order": 12,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "3.2",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1770,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "0ae17993d4b21023",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J3-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Z-\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1620,
+        "y": 1520,
+        "wires": [
+            [
+                "04b3513c96180fb3"
+            ]
+        ]
+    },
+    {
+        "id": "d529402213fa81fa",
+        "type": "ui_text",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "order": 14,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "4.1",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1770,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "8b9d2943b7d8e37f",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J4+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"RX+\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1620,
+        "y": 1560,
+        "wires": [
+            [
+                "d529402213fa81fa"
+            ]
+        ]
+    },
+    {
+        "id": "a5577ae4d6edf6e6",
+        "type": "ui_text",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "order": 16,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "4.2",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1770,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "cc988d85693d0694",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J4-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"RX-\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1620,
+        "y": 1600,
+        "wires": [
+            [
+                "a5577ae4d6edf6e6"
+            ]
+        ]
+    },
+    {
+        "id": "e2bdd2138aa6c096",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J3-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"Z-\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2540,
+        "y": 1360,
+        "wires": [
+            [
+                "421faa3e0433e22a"
+            ]
+        ]
+    },
+    {
+        "id": "11a715fde9aa19ec",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1440,
+        "wires": [
+            [
+                "e2bdd2138aa6c096"
+            ]
+        ]
+    },
+    {
+        "id": "4d190f55fa91be38",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1520,
+        "wires": [
+            [
+                "cc9ed95a13dbdcca"
+            ]
+        ]
+    },
+    {
+        "id": "695b6db3b61ed415",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "J3-/Z-",
+        "info": "",
+        "x": 2010,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "4b3ea71f41b39ab9",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J4+\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"R+\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2540,
+        "y": 1600,
+        "wires": [
+            [
+                "421faa3e0433e22a"
+            ]
+        ]
+    },
+    {
+        "id": "e219947df1d795be",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1680,
+        "wires": [
+            [
+                "4b3ea71f41b39ab9"
+            ]
+        ]
+    },
+    {
+        "id": "206b821baf289508",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1780,
+        "wires": [
+            [
+                "cc9ed95a13dbdcca"
+            ]
+        ]
+    },
+    {
+        "id": "9d0d773073dd2351",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "J4+/RX+",
+        "info": "",
+        "x": 2020,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "3677fca8d8459553",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "mode = global.get(\"JogMode\")\nif (mode)\n{\n    msg.payload = \"J4-\"\n    return msg;\n}\nelse if (!mode)\n{\n    msg.payload = \"R-\"\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2540,
+        "y": 1860,
+        "wires": [
+            [
+                "421faa3e0433e22a"
+            ]
+        ]
+    },
+    {
+        "id": "a22d2b2b54ea108f",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1920,
+        "wires": [
+            [
+                "3677fca8d8459553"
+            ]
+        ]
+    },
+    {
+        "id": "e084716aba7a3611",
+        "type": "switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 2000,
+        "wires": [
+            [
+                "cc9ed95a13dbdcca"
+            ]
+        ]
+    },
+    {
+        "id": "58c646a010c40b06",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "J4-/RX-",
+        "info": "",
+        "x": 2010,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "124c2ffa9fbeff6c",
+        "type": "ui_led",
+        "z": "f8d44828fc32afc1",
+        "order": 2,
+        "group": "79fa11aa3127feea",
+        "width": 1,
+        "height": 2,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "Terminate",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "RunApp",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 910,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "5ed33f9f55330daf",
+        "type": "template",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "RunApp",
+        "output": "str",
+        "x": 380,
+        "y": 1020,
+        "wires": [
+            [
+                "7368406f51687ce3"
+            ]
+        ]
+    },
+    {
+        "id": "82d21cd45161f780",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "status = flow.get(\"payload\")\nif (status == \"Terminate\")\n{\n    msg.payload == \"false\"\n}\nelse if (status == \"RunApp\")\n{\n    msg.payload == \"true\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 940,
+        "wires": [
+            [
+                "124c2ffa9fbeff6c",
+                "bceba1dbed0a9ea6"
+            ]
+        ]
+    },
+    {
+        "id": "7368406f51687ce3",
+        "type": "change",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 940,
+        "wires": [
+            [
+                "82d21cd45161f780"
+            ]
+        ]
+    },
+    {
+        "id": "4a9c98c8a7a0a8e4",
+        "type": "inject",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Terminate",
+        "payloadType": "str",
+        "x": 760,
+        "y": 1040,
+        "wires": [
+            [
+                "124c2ffa9fbeff6c"
+            ]
+        ]
+    },
+    {
+        "id": "8b3fbe34cae12042",
+        "type": "debug",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "05758d0b55298137",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "Get Angle and Pose data",
+        "info": "This flow will obtains the live angles and pose data from the python script through MQTT. \n\nThe Python API in the python script will get the live angle and pose data and send it to node red through MQTT. \n\nThe live data is displayed in a table in the jog and teach points interface. ",
+        "x": 170,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "0e50d2065bb0025b",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "msg.payload = [\n    {\n        \"Type\": \"Joint\", \n        \"J1/X\": \"0\",\n        \"J2/Y\": \"0\",\n        \"J3/Z\": \"0\",\n        \"J4/R\": \"0\"\n    },\n    {\n        \"Type\": \"Coord\",\n        \"J1/X\": \"0\",\n        \"J2/Y\": \"0\",\n        \"J3/Z\": \"0\",\n        \"J4/R\": \"0\"\n    }\n    ]\n\nreturn msg;\n\n    \n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 1380,
+        "wires": [
+            [
+                "dbbddd54965477d3",
+                "c4382623c083c212"
+            ]
+        ]
+    },
+    {
+        "id": "c614a49641542119",
+        "type": "inject",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 410,
+        "y": 1380,
+        "wires": [
+            [
+                "0e50d2065bb0025b"
+            ]
+        ]
+    },
+    {
+        "id": "9b866cd00928fd22",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "path = global.get(\"path\")\nsend = \"\"\nfullpath = send.concat(\"\\\"\",path,\"\\\"\")\nmsg.payload = fullpath\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 940,
+        "wires": [
+            [
+                "d4e90fc8db69a963",
+                "1af46b577a38d33c"
+            ]
+        ]
+    },
+    {
+        "id": "3201c24901e62f89",
+        "type": "change",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "path",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 860,
+        "wires": [
+            [
+                "9b866cd00928fd22"
+            ]
+        ]
+    },
+    {
+        "id": "a0ffeef8d057e8d9",
+        "type": "debug",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "4889328e82837aba",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "Run Python File",
+        "info": "Enter the filepath of a python script you wish to run, and the app will run it. \n\nThis is meant to work in conjunction with the blockly python app.\n\nThis function is unable to loop code indefinitely, it will only run the script once.\n\n",
+        "x": 100,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "2d8fb3256394c630",
+        "type": "mqtt in",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/Angle",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "78c7da635de82c98",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 1960,
+        "wires": [
+            [
+                "8b7dcfaee2ec0ef5"
+            ]
+        ]
+    },
+    {
+        "id": "18857ccf12a00cf4",
+        "type": "mqtt in",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/Pose",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "78c7da635de82c98",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 2060,
+        "wires": [
+            [
+                "513c6eaf2ef6589e"
+            ]
+        ]
+    },
+    {
+        "id": "c4382623c083c212",
+        "type": "ui_table",
+        "z": "f8d44828fc32afc1",
+        "group": "4e2ccd801084077f",
+        "name": "",
+        "order": 1,
+        "width": 9,
+        "height": 3,
+        "columns": [],
+        "outputs": 1,
+        "cts": true,
+        "x": 870,
+        "y": 1940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8b7dcfaee2ec0ef5",
+        "type": "change",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "jointAngle",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 1960,
+        "wires": [
+            [
+                "501c9b934d174981",
+                "44c3d44f15bb94c6"
+            ]
+        ]
+    },
+    {
+        "id": "513c6eaf2ef6589e",
+        "type": "change",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "pose",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 2060,
+        "wires": [
+            [
+                "501c9b934d174981",
+                "44c3d44f15bb94c6"
+            ]
+        ]
+    },
+    {
+        "id": "501c9b934d174981",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "let angle = flow.get(\"jointAngle\");\nlet pose = flow.get(\"pose\");\n\nlet angleStr = angle.slice(1,angle.length-1);\nlet angleArray = angleStr.split(\",\");\n\nlet poseStr = pose.slice(1,angle.length-1);\nlet poseArray = poseStr.split(\",\");\n\nmsg.payload = [\n    {\n        J1_x : angleArray[0],\n        J2_y : angleArray[1],\n        J3_z : angleArray[2],\n        J4_R : angleArray[3]\n    },\n    {\n        J1_x : poseArray[0],\n        J2_y : poseArray[1],\n        J3_z : poseArray[2],\n        J4_R : poseArray[3]\n    }\n];\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 1940,
+        "wires": [
+            [
+                "c4382623c083c212"
+            ]
+        ]
+    },
+    {
+        "id": "5c5a8c0e9daad993",
+        "type": "ui_button",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "group": "b0e8a24ffb1423b8",
+        "order": 1,
+        "width": 9,
+        "height": 1,
+        "passthru": false,
+        "label": "Save Points",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "savePoints",
+        "topicType": "str",
+        "x": 110,
+        "y": 2200,
+        "wires": [
+            [
+                "44c3d44f15bb94c6",
+                "9f25742f337a9a1d"
+            ]
+        ]
+    },
+    {
+        "id": "44c3d44f15bb94c6",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "\nlet angle = flow.get(\"jointAngle\");\nlet pose = flow.get(\"pose\");\n\n\nlet angleStr = angle.slice(1,angle.length-1);\nlet angleArray = angleStr.split(\",\");\n\n\nlet poseStr = pose.slice(1,angle.length-1);\nlet poseArray = poseStr.split(\",\");\n\nvar storeArray = flow.get(\"storeArray\") || [];\nvar clearArray = flow.get(\"clearArray\") || \"\";\nvar counter = flow.get(\"counter\") || 0;\nvar delete_rowNum = global.get(\"delete_rowNum\") || 0; \nvar cover_rowNum = global.get(\"cover_rowNum\") || 0;\n\n//var optionsArr = flow.get(\"optionsArr\") || [];\n\n\nif(msg.topic == \"savePoints\")\n{\n    if ((storeArray.length == 0 ) || (clearArray == 1))\n    {\n        counter++;\n        //optionsArr = [counter];\n        storeArray = [\n        {\n            Points: counter,\n            J1_x : angleArray[0],\n            J2_y : angleArray[1],\n            J3_z : angleArray[2],\n            J4_R : angleArray[3]\n        },\n        {\n            Points: \"\",\n            J1_x : poseArray[0],\n            J2_y : poseArray[1],\n            J3_z : poseArray[2],\n            J4_R : poseArray[3]\n        }\n        ];\n        clearArray = 0;\n    }\n    else\n    {\n        counter++;\n        //optionsArr.push(counter);\n        storeArray.push(\n            {\n                Points:counter,\n                J1_x : angleArray[0],\n                J2_y : angleArray[1],\n                J3_z : angleArray[2],\n                J4_R : angleArray[3]\n                \n            },\n            {\n                Points: \"\",\n                J1_x : poseArray[0],\n                J2_y : poseArray[1],\n                J3_z : poseArray[2],\n                J4_R : poseArray[3]\n                \n            }\n        )\n    }\n}\nelse if (msg.topic == \"deletePoint\")\n{\n    storeArray[delete_rowNum].J1_x =0;\n    storeArray[delete_rowNum].J2_y =0;\n    storeArray[delete_rowNum].J3_z =0;\n    storeArray[delete_rowNum].J4_R =0;\n\n    \n\n    storeArray[delete_rowNum+1] = \n    {\n        J1_x :0,\n        J2_y :0,\n        J3_z :0,\n        J4_R :0\n    }\n}\nelse if(msg.topic == \"cover\")\n{\n    storeArray[cover_rowNum].J1_x =angleArray[0];\n    storeArray[cover_rowNum].J2_y =angleArray[1];\n    storeArray[cover_rowNum].J3_z =angleArray[2];\n    storeArray[cover_rowNum].J4_R =angleArray[3];\n\n    \n\n    storeArray[cover_rowNum+1] = \n    {\n        J1_x :poseArray[0],\n        J2_y :poseArray[1],\n        J3_z :poseArray[2],\n        J4_R :poseArray[3]\n    }\n}\n\n\nflow.set(\"storeArray\", storeArray);\nflow.set(\"clearArray\", clearArray);\nflow.set(\"counter\",counter);\n\n//flow.set(\"optionsArr\", optionsArr);\n//msg.options = optionsArr; \nmsg.payload = storeArray;\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 2060,
+        "wires": [
+            [
+                "839a556128a728aa",
+                "c3010c247390e6b4"
+            ]
+        ]
+    },
+    {
+        "id": "839a556128a728aa",
+        "type": "debug",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "f304e2efd6efb845",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "var storeArray = flow.get(\"storeArray\") || [];\nvar clearArray = flow.get(\"clearArray\") || \"\"; \nvar counter = flow.get(\"counter\") || 0;\nif (msg.topic == \"reset\")\n{\n    storeArray = [\n        {\n            Points :\"\",\n            J1_x :\"\",\n            J2_y : \"\",\n            J3_z : \"\",\n            J4_R : \"\"\n        },\n        {\n            J1_x :\"\",\n            J2_y : \"\",\n            J3_z : \"\",\n            J4_R : \"\"\n        }\n    ];\n    clearArray = 1;\n    counter = 0;\n}\n\nflow.set(\"storeArray\", storeArray);\nflow.set(\"clearArray\", clearArray);\nflow.set(\"counter\", counter);\nmsg.payload = storeArray;\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 2100,
+        "wires": [
+            [
+                "c3010c247390e6b4"
+            ]
+        ]
+    },
+    {
+        "id": "75bea20f473ff4f8",
+        "type": "ui_button",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "group": "b0e8a24ffb1423b8",
+        "order": 2,
+        "width": 9,
+        "height": 1,
+        "passthru": false,
+        "label": "reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "reset",
+        "topicType": "str",
+        "x": 130,
+        "y": 2240,
+        "wires": [
+            [
+                "f304e2efd6efb845",
+                "9f25742f337a9a1d"
+            ]
+        ]
+    },
+    {
+        "id": "515f96d3e271163b",
+        "type": "mqtt out",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/CoreFunc",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "94b09997d96a666a",
+        "x": 920,
+        "y": 2820,
+        "wires": []
+    },
+    {
+        "id": "c3010c247390e6b4",
+        "type": "ui_table",
+        "z": "f8d44828fc32afc1",
+        "group": "b0e8a24ffb1423b8",
+        "name": "",
+        "order": 3,
+        "width": 9,
+        "height": 8,
+        "columns": [],
+        "outputs": 1,
+        "cts": true,
+        "x": 1110,
+        "y": 2080,
+        "wires": [
+            [
+                "9f25742f337a9a1d",
+                "71504db742f22057"
+            ]
+        ]
+    },
+    {
+        "id": "0fc8c6ebaa827c57",
+        "type": "inject",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 970,
+        "y": 2260,
+        "wires": [
+            [
+                "71504db742f22057"
+            ]
+        ]
+    },
+    {
+        "id": "71504db742f22057",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "var storeArray = flow.get(\"storeArray\") || [];\n\nlet rowNum = 0;\nrowNum = msg.row;\n\nif((rowNum+1)%2 == 0)\n{\n    rowNum = rowNum -1;\n}\n\n\nlet point = [storeArray[rowNum].J1_x, storeArray[rowNum].J2_y, storeArray[rowNum].J3_z, storeArray[rowNum].J4_R]\n\npointStr = point.toString(point)\n\nmsg.payload = pointStr; \n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 2200,
+        "wires": [
+            [
+                "bceba1dbed0a9ea6",
+                "6c0c41c5a4d916a4",
+                "4f66b76aa30a9230"
+            ]
+        ]
+    },
+    {
+        "id": "6c0c41c5a4d916a4",
+        "type": "mqtt out",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/runTo",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "62a9400db3990b17",
+        "x": 1390,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "4f66b76aa30a9230",
+        "type": "debug",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1390,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "c9c28a134dbeff75",
+        "type": "ui_text",
+        "z": "f8d44828fc32afc1",
+        "group": "4e2ccd801084077f",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Selected point:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1780,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "9f25742f337a9a1d",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "let rowNum = 0;\nrowNum = msg.row;\nif (rowNum%2 != 0)\n{\n    rowNum = (rowNum-1)/2 +1;\n}\nelse\n{\n    rowNum = rowNum/2 + 1;\n}\n\n\n\nmsg.payload = rowNum; \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 2080,
+        "wires": [
+            [
+                "c9c28a134dbeff75",
+                "68f80c6c42c67e86",
+                "83d18f621f049b31",
+                "a039e38b59458436"
+            ]
+        ]
+    },
+    {
+        "id": "73e17059bec2c74e",
+        "type": "mqtt in",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/break",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "407a01e4.6b637",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 1680,
+        "wires": [
+            [
+                "267d31c782551c08",
+                "b78891e40308cd45",
+                "b23883c104782bec",
+                "542ff1dfe5d052d3"
+            ]
+        ]
+    },
+    {
+        "id": "267d31c782551c08",
+        "type": "mqtt out",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/Break",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "407a01e4.6b637",
+        "x": 530,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "b78891e40308cd45",
+        "type": "debug",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "b23883c104782bec",
+        "type": "ui_text",
+        "z": "f8d44828fc32afc1",
+        "group": "4e2ccd801084077f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 530,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "542ff1dfe5d052d3",
+        "type": "delay",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 180,
+        "y": 1880,
+        "wires": [
+            [
+                "cc18f02193f6645d"
+            ]
+        ]
+    },
+    {
+        "id": "cc18f02193f6645d",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "msg.payload = \"\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1880,
+        "wires": [
+            [
+                "b23883c104782bec"
+            ]
+        ]
+    },
+    {
+        "id": "d6e6d2ce5490634c",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "Save Teach Points",
+        "info": "This flow allows the user to save the current live angle and pose data which was obtained from the get live angle and pose data flow. \n\nThe user may delete the teach points, cover the points and make the mg400 move the exact teach point by holding down the run to button. \n\nThe saved points are stored as an array of objects. Each object being a teach point. ",
+        "x": 820,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "524c9807f277896e",
+        "type": "link in",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "links": [
+            "fe67b00041fee1da"
+        ],
+        "x": 3495,
+        "y": 2040,
+        "wires": [
+            [
+                "27b95895e30620bc"
+            ]
+        ]
+    },
+    {
+        "id": "fe67b00041fee1da",
+        "type": "link out",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "524c9807f277896e"
+        ],
+        "x": 1435,
+        "y": 2160,
+        "wires": []
+    },
+    {
+        "id": "bceba1dbed0a9ea6",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "if (msg)\n{\n    msg.payload = 'Stop'\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 2160,
+        "wires": [
+            [
+                "fe67b00041fee1da"
+            ]
+        ]
+    },
+    {
+        "id": "1af46b577a38d33c",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "if (msg)\n{\n    msg.payload = true\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 700,
+        "wires": [
+            [
+                "a3e1670ff4977c40"
+            ]
+        ]
+    },
+    {
+        "id": "27464298780987b4",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "msg.payload = [\n    {\n        \"Type\": \"Joint\", \n        \"J1/X\": \"\",\n        \"J2/Y\": \"\",\n        \"J3/Z\": \"\",\n        \"J4/R\": \"\"\n\n    },\n    {\n        \"Type\": \"Coord\",\n        \"J1/X\": \"\",\n        \"J2/Y\": \"\",\n        \"J3/Z\": \"\",\n        \"J4/R\": \"\"\n    }\n    ]\n\nreturn msg;\n\n    \n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 1820,
+        "wires": [
+            [
+                "c3010c247390e6b4"
+            ]
+        ]
+    },
+    {
+        "id": "1c02da6fca0e37c2",
+        "type": "inject",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 850,
+        "y": 1680,
+        "wires": [
+            [
+                "27464298780987b4",
+                "adf4e594d46e127d"
+            ]
+        ]
+    },
+    {
+        "id": "adf4e594d46e127d",
+        "type": "template",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "None",
+        "output": "str",
+        "x": 1380,
+        "y": 1920,
+        "wires": [
+            [
+                "c9c28a134dbeff75"
+            ]
+        ]
+    },
+    {
+        "id": "2259a3b74229de00",
+        "type": "ui_template",
+        "z": "f8d44828fc32afc1",
+        "group": "4e2ccd801084077f",
+        "name": "MoveTo",
+        "order": 4,
+        "width": 9,
+        "height": 1,
+        "format": "\n<style>\n.button {\n  background-color: #097479;\n  border: none;\n  color: white;\n  padding: 15px 32px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n  margin: 4px 2px;\n  cursor: pointer;\n  \n  box-shadow: none !important;\n  width: 100% !important;\n  height: 100% !important;\n  margin: 0px !important;\n  min-width: 0px !important;\n  min-height: 0px !important;\n  white-space: nowrap;\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 14px;\n  \n  transition: background-color 0.1s;\n\n}\n\nbutton:hover {\n  background-color: #0b8f95;\n}\n\nbutton:active {\n  background-color: #ff0000;\n}\n\n</style>\n<button ng-mousedown=\"send({payload: 'Start'})\" ng-mouseup=\"send({payload: 'Stop'})\"><i class=\"material-icons\"> accessible_forward </i></button>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 320,
+        "y": 2540,
+        "wires": [
+            [
+                "0417e7b867870fb1",
+                "ed08de4889b377a7"
+            ]
+        ]
+    },
+    {
+        "id": "0417e7b867870fb1",
+        "type": "debug",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 2540,
+        "wires": []
+    },
+    {
+        "id": "2eac99ea3226cdad",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "let Status= global.get(\"MoveTo\");\n\nif (Status == \"Start\")\n{\n    msg.payload = \"GO\";\n}\nelse if (Status == \"Stop\")\n{\n    msg.payload = \"NOGO\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 2460,
+        "wires": [
+            [
+                "bd013c1b16b7baaf"
+            ]
+        ]
+    },
+    {
+        "id": "ed08de4889b377a7",
+        "type": "change",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "MoveTo",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 2460,
+        "wires": [
+            [
+                "2eac99ea3226cdad"
+            ]
+        ]
+    },
+    {
+        "id": "04c29b6ce52ed7a6",
+        "type": "ui_template",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "name": "1.1",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "format": "\n<style>\n.button {\n  background-color: #097479;\n  border: none;\n  color: white;\n  padding: 15px 32px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n  margin: 4px 2px;\n  cursor: pointer;\n  \n  box-shadow: none !important;\n  width: 100% !important;\n  height: 100% !important;\n  margin: 0px !important;\n  min-width: 0px !important;\n  min-height: 0px !important;\n  white-space: nowrap;\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 14px;\n  \n  transition: background-color 0.1s;\n\n}\n\nbutton:hover {\n  background-color: #0b8f95;\n}\n\nbutton:active {\n  background-color: #ff0000;\n}\n\n</style>\n<button ng-mousedown=\"send({payload: '1'})\" ng-mouseup=\"send({payload: '0'})\"><i class=\"material-icons\"> accessible_forward </i></button>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 2010,
+        "y": 380,
+        "wires": [
+            [
+                "45f60dfd8df81963",
+                "fa82fa17ae940131"
+            ]
+        ]
+    },
+    {
+        "id": "0e886bafc0b8e26d",
+        "type": "ui_template",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "name": "1.2",
+        "order": 5,
+        "width": 2,
+        "height": 1,
+        "format": "\n<style>\n.button {\n  background-color: #097479;\n  border: none;\n  color: white;\n  padding: 15px 32px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n  margin: 4px 2px;\n  cursor: pointer;\n  \n  box-shadow: none !important;\n  width: 100% !important;\n  height: 100% !important;\n  margin: 0px !important;\n  min-width: 0px !important;\n  min-height: 0px !important;\n  white-space: nowrap;\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 14px;\n  \n  transition: background-color 0.1s;\n\n}\n\nbutton:hover {\n  background-color: #0b8f95;\n}\n\nbutton:active {\n  background-color: #ff0000;\n}\n\n</style>\n<button ng-mousedown=\"send({payload: '1'})\" ng-mouseup=\"send({payload: '0'})\"><i class=\"material-icons\"> accessible_forward </i></button>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 2010,
+        "y": 600,
+        "wires": [
+            [
+                "e423c3e995b93267",
+                "aeeb9fa02d737c8f"
+            ]
+        ]
+    },
+    {
+        "id": "4641e427bddae6c6",
+        "type": "ui_template",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "name": "2.1",
+        "order": 7,
+        "width": 2,
+        "height": 1,
+        "format": "\n<style>\n.button {\n  background-color: #097479;\n  border: none;\n  color: white;\n  padding: 15px 32px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n  margin: 4px 2px;\n  cursor: pointer;\n  \n  box-shadow: none !important;\n  width: 100% !important;\n  height: 100% !important;\n  margin: 0px !important;\n  min-width: 0px !important;\n  min-height: 0px !important;\n  white-space: nowrap;\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 14px;\n  \n  transition: background-color 0.1s;\n\n}\n\nbutton:hover {\n  background-color: #0b8f95;\n}\n\nbutton:active {\n  background-color: #ff0000;\n}\n\n</style>\n<button ng-mousedown=\"send({payload: '1'})\" ng-mouseup=\"send({payload: '0'})\"><i class=\"material-icons\"> accessible_forward </i></button>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 2010,
+        "y": 840,
+        "wires": [
+            [
+                "541cc6a388cd5c50",
+                "86a38f2f4aa69a05"
+            ]
+        ]
+    },
+    {
+        "id": "31106df41eef6135",
+        "type": "ui_template",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "name": "2.2",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "format": "\n<style>\n.button {\n  background-color: #097479;\n  border: none;\n  color: white;\n  padding: 15px 32px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n  margin: 4px 2px;\n  cursor: pointer;\n  \n  box-shadow: none !important;\n  width: 100% !important;\n  height: 100% !important;\n  margin: 0px !important;\n  min-width: 0px !important;\n  min-height: 0px !important;\n  white-space: nowrap;\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 14px;\n  \n  transition: background-color 0.1s;\n\n}\n\nbutton:hover {\n  background-color: #0b8f95;\n}\n\nbutton:active {\n  background-color: #ff0000;\n}\n\n</style>\n<button ng-mousedown=\"send({payload: '1'})\" ng-mouseup=\"send({payload: '0'})\"><i class=\"material-icons\"> accessible_forward </i></button>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 2010,
+        "y": 1080,
+        "wires": [
+            [
+                "e3a67a38eed69908",
+                "28d5c7c943cdb33f"
+            ]
+        ]
+    },
+    {
+        "id": "876004c57547189f",
+        "type": "ui_template",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "name": "3.1",
+        "order": 11,
+        "width": 2,
+        "height": 1,
+        "format": "\n<style>\n.button {\n  background-color: #097479;\n  border: none;\n  color: white;\n  padding: 15px 32px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n  margin: 4px 2px;\n  cursor: pointer;\n  \n  box-shadow: none !important;\n  width: 100% !important;\n  height: 100% !important;\n  margin: 0px !important;\n  min-width: 0px !important;\n  min-height: 0px !important;\n  white-space: nowrap;\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 14px;\n  \n  transition: background-color 0.1s;\n\n}\n\nbutton:hover {\n  background-color: #0b8f95;\n}\n\nbutton:active {\n  background-color: #ff0000;\n}\n\n</style>\n<button ng-mousedown=\"send({payload: '1'})\" ng-mouseup=\"send({payload: '0'})\"><i class=\"material-icons\"> accessible_forward </i></button>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 2010,
+        "y": 1320,
+        "wires": [
+            [
+                "25de07041bb0996b",
+                "648b3a3f33204f41"
+            ]
+        ]
+    },
+    {
+        "id": "bacf1dc47d8b9222",
+        "type": "ui_template",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "name": "3.2",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "format": "\n<style>\n.button {\n  background-color: #097479;\n  border: none;\n  color: white;\n  padding: 15px 32px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n  margin: 4px 2px;\n  cursor: pointer;\n  \n  box-shadow: none !important;\n  width: 100% !important;\n  height: 100% !important;\n  margin: 0px !important;\n  min-width: 0px !important;\n  min-height: 0px !important;\n  white-space: nowrap;\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 14px;\n  \n  transition: background-color 0.1s;\n\n}\n\nbutton:hover {\n  background-color: #0b8f95;\n}\n\nbutton:active {\n  background-color: #ff0000;\n}\n\n</style>\n<button ng-mousedown=\"send({payload: '1'})\" ng-mouseup=\"send({payload: '0'})\"><i class=\"material-icons\"> accessible_forward </i></button>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 2010,
+        "y": 1560,
+        "wires": [
+            [
+                "11a715fde9aa19ec",
+                "4d190f55fa91be38"
+            ]
+        ]
+    },
+    {
+        "id": "9c865da41d7a1bce",
+        "type": "ui_template",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "name": "4.1",
+        "order": 15,
+        "width": 2,
+        "height": 1,
+        "format": "\n<style>\n.button {\n  background-color: #097479;\n  border: none;\n  color: white;\n  padding: 15px 32px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n  margin: 4px 2px;\n  cursor: pointer;\n  \n  box-shadow: none !important;\n  width: 100% !important;\n  height: 100% !important;\n  margin: 0px !important;\n  min-width: 0px !important;\n  min-height: 0px !important;\n  white-space: nowrap;\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 14px;\n  \n  transition: background-color 0.1s;\n\n}\n\nbutton:hover {\n  background-color: #0b8f95;\n}\n\nbutton:active {\n  background-color: #ff0000;\n}\n\n</style>\n<button ng-mousedown=\"send({payload: '1'})\" ng-mouseup=\"send({payload: '0'})\"><i class=\"material-icons\"> accessible_forward </i></button>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 2010,
+        "y": 1820,
+        "wires": [
+            [
+                "e219947df1d795be",
+                "206b821baf289508"
+            ]
+        ]
+    },
+    {
+        "id": "c8dded63c6666654",
+        "type": "ui_template",
+        "z": "f8d44828fc32afc1",
+        "group": "d6f7e2531ada22b7",
+        "name": "4.2",
+        "order": 17,
+        "width": 2,
+        "height": 1,
+        "format": "\n<style>\n.button {\n  background-color: #097479;\n  border: none;\n  color: white;\n  padding: 15px 32px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n  margin: 4px 2px;\n  cursor: pointer;\n  \n  box-shadow: none !important;\n  width: 100% !important;\n  height: 100% !important;\n  margin: 0px !important;\n  min-width: 0px !important;\n  min-height: 0px !important;\n  white-space: nowrap;\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 14px;\n  \n  transition: background-color 0.1s;\n\n}\n\nbutton:hover {\n  background-color: #0b8f95;\n}\n\nbutton:active {\n  background-color: #ff0000;\n}\n\n</style>\n<button ng-mousedown=\"send({payload: '1'})\" ng-mouseup=\"send({payload: '0'})\"><i class=\"material-icons\"> accessible_forward </i></button>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 2010,
+        "y": 2040,
+        "wires": [
+            [
+                "a22d2b2b54ea108f",
+                "e084716aba7a3611"
+            ]
+        ]
+    },
+    {
+        "id": "0b63ed10f41c5eac",
+        "type": "ui_switch",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "label": "Enable Robot",
+        "tooltip": "",
+        "group": "79fa11aa3127feea",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "Enable",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "Disable",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 700,
+        "y": 2820,
+        "wires": [
+            [
+                "515f96d3e271163b"
+            ]
+        ]
+    },
+    {
+        "id": "74a88f247c265d13",
+        "type": "ui_button",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "group": "79fa11aa3127feea",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Clear Error",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "ClearErr",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 710,
+        "y": 2880,
+        "wires": [
+            [
+                "515f96d3e271163b"
+            ]
+        ]
+    },
+    {
+        "id": "45a8ed7262629a40",
+        "type": "ui_button",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "group": "4e2ccd801084077f",
+        "order": 8,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Delete point",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "deletePoint",
+        "topicType": "str",
+        "x": 110,
+        "y": 2160,
+        "wires": [
+            [
+                "44c3d44f15bb94c6"
+            ]
+        ]
+    },
+    {
+        "id": "e0d55f49500a2d6c",
+        "type": "ui_button",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "group": "4e2ccd801084077f",
+        "order": 10,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Cover",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "cover",
+        "topicType": "str",
+        "x": 130,
+        "y": 2120,
+        "wires": [
+            [
+                "44c3d44f15bb94c6"
+            ]
+        ]
+    },
+    {
+        "id": "a039e38b59458436",
+        "type": "ui_text_input",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "label": "Delete:",
+        "tooltip": "",
+        "group": "4e2ccd801084077f",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1760,
+        "y": 2040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "68f80c6c42c67e86",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "var storeArray = flow.get(\"storeArray\") || [];\nvar delete_rowNum = global.get(\"delete_rowNum\") || 0;\nvar cover_rowNum = global.get(\"cover_rowNum\") || 0;\n\nvar tablerowNum = 0; \ntablerowNum = msg.payload;\ndelete_rowNum = tablerowNum*2 - 2;\ncover_rowNum = tablerowNum*2 - 2;\n\nflow.set(\"storeArray\", storeArray);\nglobal.set(\"delete_rowNum\", delete_rowNum);\nglobal.set(\"cover_rowNum\", cover_rowNum);\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1740,
+        "y": 1880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "83d18f621f049b31",
+        "type": "ui_text_input",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "label": "Cover:",
+        "tooltip": "",
+        "group": "4e2ccd801084077f",
+        "order": 7,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1750,
+        "y": 1980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "684c6cacfe9d2aac",
+        "type": "template",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Run",
+        "output": "str",
+        "x": 480,
+        "y": 1260,
+        "wires": [
+            [
+                "60431e17942e027b"
+            ]
+        ]
+    },
+    {
+        "id": "60431e17942e027b",
+        "type": "change",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Lock",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1200,
+        "y": 1140,
+        "wires": [
+            [
+                "3b60beb173298f7e"
+            ]
+        ]
+    },
+    {
+        "id": "059cdca6e4e9714b",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "func": "Status = global.get(\"Lock\")\nif (Status == \"Run\")\n{\n    msg.payload = \"Enable\"\n}\nelse if (Status == \"Terminate\")\n{\n    msg.payload = \"Disable\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 2820,
+        "wires": [
+            [
+                "6f8d2c37f6dcd9a4",
+                "0b63ed10f41c5eac"
+            ]
+        ]
+    },
+    {
+        "id": "b7045893b2e65322",
+        "type": "mqtt in",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/CoreFunc",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "94b09997d96a666a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 920,
+        "y": 2760,
+        "wires": [
+            [
+                "e5498a841fe09feb"
+            ]
+        ]
+    },
+    {
+        "id": "e5498a841fe09feb",
+        "type": "debug",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 2760,
+        "wires": []
+    },
+    {
+        "id": "6f8d2c37f6dcd9a4",
+        "type": "debug",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 3000,
+        "wires": []
+    },
+    {
+        "id": "3b60beb173298f7e",
+        "type": "link out",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "4bb1fad2e3873da5"
+        ],
+        "x": 1355,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "4bb1fad2e3873da5",
+        "type": "link in",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "links": [
+            "3b60beb173298f7e"
+        ],
+        "x": 275,
+        "y": 2740,
+        "wires": [
+            [
+                "059cdca6e4e9714b"
+            ]
+        ]
+    },
+    {
+        "id": "bd013c1b16b7baaf",
+        "type": "mqtt out",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/TPMove",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "407a01e4.6b637",
+        "x": 1010,
+        "y": 2460,
+        "wires": []
+    },
+    {
+        "id": "374e960aa93fe4f8",
+        "type": "mqtt in",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/TPMove",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "407a01e4.6b637",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 940,
+        "y": 2540,
+        "wires": [
+            [
+                "4ce6d993b2686a1f"
+            ]
+        ]
+    },
+    {
+        "id": "4ce6d993b2686a1f",
+        "type": "debug",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 2540,
+        "wires": []
+    },
+    {
+        "id": "e8de507d994d3579",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "Move to the Teach Point",
+        "info": "When the run to button is held down, a message is sent to the Python script through MQTT to enable the robot to move to the teach point.\n\nWhen the button is no longer held down, a new message is sent to the python script to stop the robot motion the teach point. ",
+        "x": 280,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "6f0d61538aca223d",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "Lock/unlock joints + clear error",
+        "info": "This flow will allow users to lock or unlock the mg400 joints via the enable robot button as well as clear errors that show up. ",
+        "x": 300,
+        "y": 2680,
+        "wires": []
+    },
+    {
+        "id": "1eb62892c3a50ec7",
+        "type": "mqtt out",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "topic": "topic/ToggleJog",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "94b09997d96a666a",
+        "x": 3600,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "8915a55b940be1f4",
+        "type": "ui_switch",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "",
+        "label": "Enable Jog",
+        "tooltip": "",
+        "group": "d0e6d0881e1e8309",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "Start",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "Stop",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 3590,
+        "y": 1880,
+        "wires": [
+            [
+                "1eb62892c3a50ec7",
+                "da298b1918cf72f6"
+            ]
+        ]
+    },
+    {
+        "id": "41739fde05d48ac3",
+        "type": "ui_ui_control",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "",
+        "events": "all",
+        "x": 3830,
+        "y": 1820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da298b1918cf72f6",
+        "type": "function",
+        "z": "f8d44828fc32afc1",
+        "d": true,
+        "name": "",
+        "func": "if (msg.payload == \"Start\")\n{\n    msg.payload = {\"group\": {\"show\": [\"Jog_Jog\"]}}\n}\nelse if (msg.payload == \"Stop\")\n{\n    msg.payload = {\"group\": {\"hide\": [\"Jog_Jog\"]}}\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3780,
+        "y": 1900,
+        "wires": [
+            [
+                "41739fde05d48ac3"
+            ]
+        ]
+    },
+    {
+        "id": "69accbb2a55c2088",
+        "type": "inject",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Stop",
+        "payloadType": "str",
+        "x": 3550,
+        "y": 1820,
+        "wires": [
+            [
+                "8915a55b940be1f4"
+            ]
+        ]
+    },
+    {
+        "id": "e4b0036fdedf69c3",
+        "type": "inject",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"group\": {\"hide\": [\"Jog_Jog\"]}}",
+        "payloadType": "json",
+        "x": 3650,
+        "y": 1760,
+        "wires": [
+            [
+                "41739fde05d48ac3"
+            ]
+        ]
+    },
+    {
+        "id": "27b95895e30620bc",
+        "type": "delay",
+        "z": "f8d44828fc32afc1",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 3660,
+        "y": 2040,
+        "wires": [
+            [
+                "8915a55b940be1f4"
+            ]
+        ]
+    },
+    {
+        "id": "80f9eea94d40f386",
+        "type": "comment",
+        "z": "f8d44828fc32afc1",
+        "name": "Enable/Disable Jog Mode",
+        "info": "No longer implemented in the Node Red App",
+        "x": 3790,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "39d53fe8df3bfae2",
+        "type": "ui_spacer",
+        "z": "f8d44828fc32afc1",
+        "name": "spacer",
+        "group": "d6f7e2531ada22b7",
+        "order": 26,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e5313a041f45efd2",
+        "type": "ui_spacer",
+        "z": "f8d44828fc32afc1",
+        "name": "spacer",
+        "group": "d6f7e2531ada22b7",
+        "order": 28,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "1e3fae41955c7d76",
+        "type": "ui_spacer",
+        "z": "f8d44828fc32afc1",
+        "name": "spacer",
+        "group": "d6f7e2531ada22b7",
+        "order": 30,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "2a9a59f3197acad1",
+        "type": "ui_spacer",
+        "z": "f8d44828fc32afc1",
+        "name": "spacer",
+        "group": "d6f7e2531ada22b7",
+        "order": 32,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "362c21cd00950878",
+        "type": "ui_spacer",
+        "z": "f8d44828fc32afc1",
+        "name": "spacer",
+        "group": "d6f7e2531ada22b7",
+        "order": 34,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "c7709abc4a76d3a9",
+        "type": "ui_spacer",
+        "z": "f8d44828fc32afc1",
+        "name": "spacer",
+        "group": "d6f7e2531ada22b7",
+        "order": 36,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3cb7219fedd977f1",
+        "type": "ui_spacer",
+        "z": "f8d44828fc32afc1",
+        "name": "spacer",
+        "group": "d6f7e2531ada22b7",
+        "order": 38,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "facd8b78adc0f9f1",
+        "type": "ui_spacer",
+        "z": "f8d44828fc32afc1",
+        "name": "spacer",
+        "group": "d6f7e2531ada22b7",
+        "order": 42,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "978b07e8df9d7f61",
+        "type": "ui_spacer",
+        "z": "f8d44828fc32afc1",
+        "name": "spacer",
+        "group": "d6f7e2531ada22b7",
+        "order": 44,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e82a9a0ad16779b3",
+        "type": "ui_spacer",
+        "z": "f8d44828fc32afc1",
+        "name": "spacer",
+        "group": "d6f7e2531ada22b7",
+        "order": 46,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4350ae8e9852e058",
+        "type": "ui_spacer",
+        "z": "f8d44828fc32afc1",
+        "name": "spacer",
+        "group": "d6f7e2531ada22b7",
+        "order": 48,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "b60ac6101ab5bedb",
+        "type": "ui_spacer",
+        "z": "f8d44828fc32afc1",
+        "name": "spacer",
+        "group": "4e2ccd801084077f",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "06754f38936f57c9",
+        "type": "ui_spacer",
+        "z": "f8d44828fc32afc1",
+        "name": "spacer",
+        "group": "4e2ccd801084077f",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6a2351abb1784f1b",
+        "type": "ui_group",
+        "name": "Modbus Commands",
+        "tab": "82a6d84aec4cdc86",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "63d69422.2169ac",
+        "type": "modbus-client",
+        "name": "Dobot controller",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": true,
+        "queueLogEnabled": false,
+        "tcpHost": "192.168.5.1",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "serialAsciiResponseStartDelimiter": "",
+        "unit_id": "0",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "f62a32120828bdd1",
+        "type": "ui_group",
+        "name": "Run Python",
+        "tab": "82a6d84aec4cdc86",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "94b09997d96a666a",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "79fa11aa3127feea",
+        "type": "ui_group",
+        "name": "App Commands",
+        "tab": "82a6d84aec4cdc86",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d6f7e2531ada22b7",
+        "type": "ui_group",
+        "name": "Jog",
+        "tab": "0c1fe144dbac8bae",
+        "order": 3,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d0e6d0881e1e8309",
+        "type": "ui_group",
+        "name": "Position Data",
+        "tab": "0c1fe144dbac8bae",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "78c7da635de82c98",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4e2ccd801084077f",
+        "type": "ui_group",
+        "name": "Current Position",
+        "tab": "e90a75145e6cbe56",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b0e8a24ffb1423b8",
+        "type": "ui_group",
+        "name": "Teach Points",
+        "tab": "e90a75145e6cbe56",
+        "order": 2,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "62a9400db3990b17",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "407a01e4.6b637",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "82a6d84aec4cdc86",
+        "type": "ui_tab",
+        "name": "Dobot_MG400 Control",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0c1fe144dbac8bae",
+        "type": "ui_tab",
+        "name": "Jog",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e90a75145e6cbe56",
+        "type": "ui_tab",
+        "name": "Teach Points",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    }
+]
