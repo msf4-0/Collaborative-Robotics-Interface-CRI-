@@ -161,14 +161,18 @@ def main(client_dashboard, client_feedback, Angle, Pose):
         #Teach point
         if recv_topic == "topic/runTo":
             time.sleep(0.25)
+            # let the variable point be the received teach point object string
             point = recv_msg
             time.sleep(0.1)
             print("Got the teach point angle.................................................................................")
             print("Got the teach point angle.................................................................................")
 
             # time.sleep(0.3)
+            # augment the received string and change it into an array of joint angles
             pointString = point.split(",")
+            
             #topic/TPMove for hold button
+            #when the run to button is held down enter the function below
             while recv_topic == "topic/runTo" or recv_topic == "topic/TPMove":
                 print("Start runto the teach point angle.................................................................................")
 
@@ -183,6 +187,7 @@ def main(client_dashboard, client_feedback, Angle, Pose):
                 time.sleep(0.1)
                 #If button is held down 
                 while recv_topic == "topic/TPMove" and recv_msg == "GO":
+                    #move the dobot to the joint angles obtained from points
                     client_feedback.JointMovJ((float(pointString[0])),float((pointString[1])),float((pointString[2])),float((pointString[3])),float((pointString[4])),float((pointString[5]))) 
                     time.sleep(0.25)
                     Angle = client_dashboard.GetAngle()
